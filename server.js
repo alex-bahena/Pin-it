@@ -7,4 +7,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 
 const droutes = require("./controllers");
-const sequelize = require()
+const sequelize = require();
+
+const app = express();
+const PORT = procces.env.PORT || 3001;
