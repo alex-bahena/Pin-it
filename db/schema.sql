@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS pin_it;
+
+CREATE DATABASE pin_it;
