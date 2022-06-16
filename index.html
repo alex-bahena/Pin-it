@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Pin-it!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="leading-normal tracking-normal text-black gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <nav id="header" class="fixed w-full z-30 top-0 text-black bg-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <img class="h-8 fill-current inline" src="pin.png" alt="pin" />
+            Pin-It!
+          </a>
+        </div>
+        <div>
+          <button id="navAction" class="mx-auto lg:mx-0 bg-black text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Log in
+          </button>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <div class="pt-48">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pl-24">
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <p class="uppercase tracking-loose w-full">Ready to put everything in order?</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            Keep always organized
+          </h1>
+          <p class="leading-normal text-2xl mb-8">
+            Pin-It! is the best tool to easily organize all your tabs, usernames, passwords, and payment methods. Start to Pin-It now!
+          </p>
+          <button id="signUpBtn" class="mx-auto lg:mx-0 hover:bg-black hover:text-white bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Sign up
+          </button>
+        </div>
+    </div>
+        <section class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+            <h3 class="font-bold text-2xl">Welcome back to Pin-It!</h3>
+            <p class="text-gray-600 pt-2">Log in to your account.</p>
+        <section class="mt-10">
+            <form class="flex flex-col">
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Email</label>
+                    <input type="text" id="email" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                </div>
+                <div class="mb-6 pt-3 rounded bg-gray-200">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
+                    <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+                </div>
+                <button class="bg-black text-white font-bold py-2 rounded shadow-lg hover:scale-105 duration-300 ease-in-out transition duration-200" type="submit">Log In</button>
+            </form>
+            <div class="max-w-lg mx-auto text-center mt-8 mb-6">
+                <a href="#" class="text-sm text-blue-500 hover:underline mb-6">Forgot your password?</a>
+            </div>
+            <div class="max-w-lg mx-auto text-center mt-4 mb-2">
+                <p class="text-black">Don't have an account? <a href="#" class="font-bold hover:underline">Sign up now</a>.</p>
+            </div>
+        </section>
+        </section>
+
+        <section class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+            <h3 class="font-bold text-2xl">Create your account</h3>
+            <p class="text-gray-600 pt-2">Start to Pin-It!</p>
+        <section class="mt-10">
+            <form>
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="password" id="userPassword" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="password" id="userRepeatPassword" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+                </div>
+                <div class="grid xl:grid-cols-2 xl:gap-6">
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="text" id="firstName" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                </div>
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="text" id="lastName" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                </div>
+                </div>
+                <div>
+                <div class="relative z-0 w-full mb-6 group">
+                <input type="tel" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" id="phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (55 1234 5678)</label>
+                </div>
+                </div>
+                <button type="submit" class="text-white bg-black hover:scale-105 duration-300 ease-in-out focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+            </form>
+        </section>
+        </section>
+    </main>
+</body>
+</html>
