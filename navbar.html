@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,aspect-ratio,line-clamp"></script>
+  <title>Navbar</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav
+      class="p-5 navbar navbar-expand-lg shadow-md py-4 bg-purple-700 relative items-center w-full justify-between md:flex md:items-center md:justify-between sm:flex sm: flex-row sm:items-center sm:justify-between">
+      <div class="px-6 w-full flex flex-wrap items-center">
+        <div class="navbar-collapse collapse grow items-center cursor-pointer" id="navbarSupportedContentY">
+          <div>
+            <ul
+              class="menu navbar-nav w-full gap-x-4 flex justify-center lg:flex lg:flex-row md:flex md:flex-row md:items-center md:w-auto md:static absolute bg-purple-700 left-0 md:w-500px md:py-0 py-4 md:pl-0 pl-7 sm:flex sm:items-center sm:flex-direction:row sm:opacity-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-amber-400" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              <p class="text-white text-xl"><span style="font-family: 'Nunito Sans', sans-serif;">pin-it</span></p>
+              <li class="flex nav-item mx-4 my-6 md:my-0">
+                <div class="relative inline-block text-left">
+                  <div>
+                    <button type="button"
+                      class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-200 focus:bg-gray-200"
+                      id="menuButton" aria-expanded="true" aria-haspopup="true">
+                      Tiles
+                      <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div
+                    class="hidden hover:block inset-x-px top-14 absolute right-0 mt-2 w-56 rounded-md shadow-sm bg-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu" id="dropdownOptions" aria-orientation="vertical" aria-labelledby="menuButton"
+                    tabindex="-1">
+                    <div class="py-1" role="none">
+                      <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="menu-item-0">Shopping</a>
+                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="menu-item-1">Education</a>
+                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="menu-item-2">Jobs</a>
+                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="menu-item-2">Developer</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="flex mx-6 basis-3/6 justify-center">
+                <form class="flex items-center w-2/4">
+                  <label for="simple-search" class="sr-only">Search</label>
+                  <div class="relative w-full">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                      <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <input type="text" id="simple-search"
+                      class="bg-white border border-none text-gray-800 text-sm rounded-lg block w-full pl-10 p-2.5"
+                      placeholder="Search" required>
+                  </div>
+                  <button type="submit"
+                    class="p-2.5 ml-2 text-sm font-medium text-white bg-teal-500 rounded-lg border-none hover:bg-teal-600">Search</button>
+                </form>
+              </li>
+              <li>
+              <li class="flex mx-6 px-6">
+                <div class="flex">
+                  <button type="button" id="notesBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white hover:text-amber-400" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="flex mx-6 px-6">
+                <div class="flex">
+                  <button type="button" id="profileBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white hover:text-amber-400" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div
+                  class="hidden top-14 absolute mt-2 mr-7 w-56 rounded-md shadow-sm bg-gray-200 ring-1 ring-black ring-opacity-5"
+                  role="menu" id="profileOptions" aria-orientation="vertical" aria-labelledby="profileBtn"
+                  tabindex="-1">
+                  <div class="py-1" role="none">
+                    <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                    <p href="#" class="text-black font-bold font-extrabold block px-4 py-2 text-sm" role="menuitem"
+                      tabindex="-1" id="menu-item-0">Hello "User"</p>
+                    <a href="#" class="text-gray-700 hover:text-black hover:font-bold block px-4 py-2 text-sm"
+                      role="menuitem" tabindex="-1" id="menu-item-1">Profile</a>
+                    <button class="rounded-md border bg-red-500 text-white hover:font-extrabold block px-4 py-2 text-sm"
+                      role="menuitem" tabindex="-1" id="menu-item-2">Log
+                      Out</button>
+                  </div>
+                </div>
+          </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./navbar.js"></script>
+</body>
+
+</html>
