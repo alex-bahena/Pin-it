@@ -38,7 +38,7 @@ const hostname = '127.0.0.1'const port = 3000
 const server = http.createServer((req, res) => {  res.statusCode = 200  res.setHeader('Content-Type', 'text/plain')  res.end('Hello World\n')})
 server.listen(port, hostname, () => {  console.log(`Server running at http://${hostname}:${port}/`)})
 
-# Pacjage.json file
+# Package.json file
 A package.json file can be described as a manifest of your project that includes the packages and applications it depends on, information about its unique source control, and specific metadata like the project's name, description, and author.
 
 # Node.js frameworks - Express
