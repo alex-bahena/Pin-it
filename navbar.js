@@ -2,6 +2,12 @@ const tilesDropdownBtn = document.getElementById("menuButton")
 const tilesOptions = document.getElementById("dropdownOptions")
 const profileBtn = document.getElementById("profileBtn")
 const profileOptions = document.getElementById("profileOptions")
+const createNewCardBtn = document.getElementById("createNewCardBtn")
+const createCardModal = document.getElementById("createCardModal")
+const closeCardBtn = document.getElementById("closeCardBtn")
+const deleteCardModal = document.getElementById("deleteCardModal")
+const deleteCardBtn = document.getElementById("deleteCardBtn")
+const closeDeleteCardBtn = document.getElementById("closeDeleteCardBtn")
 
 // tilesDropdownBtn.onclick = function () {
 //   tilesOptions.classList.toggle("hidden")
@@ -20,6 +26,29 @@ tilesOptions.onmouseleave = function () {
 profileBtn.onclick = function () {
   profileOptions.classList.toggle("hidden")
   profileOptions.classList.toggle("block")
+}
+
+createNewCardBtn.onclick = function () {
+  createCardModal.style.display = "flex"
+}
+
+closeCardBtn.onclick = function () {
+  createCardModal.style.display = "none";
+}
+
+deleteCardBtn.onclick = function () {
+  deleteCardModal.style.display = "flex"
+}
+
+closeDeleteCardBtn.onclick = function () {
+  deleteCardModal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target === createCardModal || event.target === deleteCardModal) {
+    createCardModal.style.display = "none";
+    deleteCardModal.style.display = "none";
+  }
 }
 
 var phPool = [];

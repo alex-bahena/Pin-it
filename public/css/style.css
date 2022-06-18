@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .grid {
   position: relative;
 }
