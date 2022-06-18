@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User} = require('../models');
+const { User, Pages} = require('../models');
 
 router.get("/", async (req, res) => {
     res.render("homepage", {
@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
     });
 });
 
-
+//esto es una prueba
 router.get("/login", (req, res)=> {
     if(req.session.loggedIn) {
         res.redirect("/");
