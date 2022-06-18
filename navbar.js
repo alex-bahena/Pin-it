@@ -74,8 +74,8 @@ cancelNoteBtn.onclick = function () {
 window.onclick = function (event) {
   if (event.target == createTileModal || event.target == deleteTileModal || event.target == createNoteModal) {
     createTileModal.style.display = "none";
-    deleteTileModal.style.display = "none";
     createNoteModal.style.display = "none";
+    deleteTileModal.style.display = "none";
   }
 }
 
