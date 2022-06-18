@@ -1,0 +1,22 @@
+<main>
+    <h1>Homepage</h1>
+    {{#if hasPages }}
+    <div class="grid">
+        {{#each pages}}
+        <div class="card">
+            <!-- <header class="card__header">
+                <h1 class="page__name">.{{ this.name }}</h1>
+            </header> -->
+            
+            <div class="card__content item">
+                <h2 class="page-url">{{this.url}}</h2>
+                
+            </div>
+           
+        </div>
+        {{/each}}
+    </div>
+    {{ else }}
+    <h1>No pages Found!</h1>
+    {{/if}}
+</main>
