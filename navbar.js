@@ -45,7 +45,7 @@ closeDeleteCardBtn.onclick = function () {
 }
 
 window.onclick = function (event) {
-  if (event.target === createCardModal || event.target === deleteCardModal) {
+  if (event.target == createCardModal || event.target == deleteCardModal) {
     createCardModal.style.display = "none";
     deleteCardModal.style.display = "none";
   }
@@ -61,114 +61,120 @@ var grid = new Muuri(".grid", {
   createElement(item) {
     return phPool.pop() || phElem.cloneNode();
   },
-  layout: function (grid, layoutId, items, width, height, callback) {
 
-    var layout = {
-      id: layoutId,
-      items: items,
-      slots: [],
-      styles: {},
-    };
+  // Center Grid Code
 
-    var item;
-    var m;
-    var x = 0;
-    var y = 0;
-    var w = 0;
-    var h = 0;
+  // layout: function (grid, layoutId, items, width, height, callback) {
 
-    var maxW = width / 2;
-    var currentW = 0;
-    var currentRowH = 0;
-    var currentRowW = 0;
-    var rowSizes = [];
-    var rowFixes = [];
+  //   var layout = {
+  //     id: layoutId,
+  //     items: items,
+  //     slots: [],
+  //     styles: {},
+  //   };
 
-    var xPre, yPre, wPre, hPre;
-    var numToFix = 0;
+  //   var item;
+  //   var m;
+  //   var x = 0;
+  //   var y = 0;
+  //   var w = 0;
+  //   var h = 0;
 
-    for (var i = 0; i < items.length; i++) {
-      item = items[i];
+  //   var maxW = width / 2;
+  //   var currentW = 0;
+  //   var currentRowH = 0;
+  //   var currentRowW = 0;
+  //   var rowSizes = [];
+  //   var rowFixes = [];
 
-      m = item.getMargin();
-      wPre = item.getWidth() + m.left + m.right;
-      hPre = item.getHeight() + m.top + m.bottom;
-      xPre += wPre;
+  //   var xPre, yPre, wPre, hPre;
+  //   var numToFix = 0;
 
-      if (hPre > currentRowH) {
-        currentRowH = hPre;
-      }
+  //   for (var i = 0; i < items.length; i++) {
+  //     item = items[i];
 
-      if (w < currentRowW) {
-        currentRowW = wPre;
-      }
+  //     m = item.getMargin();
+  //     wPre = item.getWidth() + m.left + m.right;
+  //     hPre = item.getHeight() + m.top + m.bottom;
+  //     xPre += wPre;
 
-      rowSizes.push(width / 2);
-      numToFix++;
-      currentW += wPre;
+  //     if (hPre > currentRowH) {
+  //       currentRowH = hPre;
+  //     }
 
-      var k = 0;
+  //     if (w < currentRowW) {
+  //       currentRowW = wPre;
+  //     }
 
-      for (var j = 0; j < numToFix; j++) {
-        rowSizes[i - j] -= wPre / 2;
-      }
+  //     rowSizes.push(width / 2);
+  //     numToFix++;
+  //     currentW += wPre;
 
-      if (numToFix > 1) {
-        rowSizes[i] -= (wPre / 2) * (numToFix - 1);
-        k += (wPre / 2);
-      }
+  //     var k = 0;
 
-      currentW -= k;
-      rowFixes.push(k);
+  //     for (var j = 0; j < numToFix; j++) {
+  //       rowSizes[i - j] -= wPre / 2;
+  //     }
 
-      if (currentW >= maxW) {
-        yPre += currentRowH;
-        currentRowH = 0;
-        xPre = 0;
-        numToFix -= 1;
-        currentW = 0;
-        numToFix = 0;
-        k = 0;
-      }
-    }
+  //     if (numToFix > 1) {
+  //       rowSizes[i] -= (wPre / 2) * (numToFix - 1);
+  //       k += (wPre / 2);
+  //     }
 
-    maxW = width / 2;
-    currentW = 0;
-    currentRowH = 0;
-    currentRowW = 0;
+  //     currentW -= k;
+  //     rowFixes.push(k);
 
-    for (var i = 0; i < items.length; i++) {
-      item = items[i];
-      x += w;
+  //     if (currentW >= maxW) {
+  //       yPre += currentRowH;
+  //       currentRowH = 0;
+  //       xPre = 0;
+  //       numToFix -= 1;
+  //       currentW = 0;
+  //       numToFix = 0;
+  //       k = 0;
+  //     }
+  //   }
 
-      if (h > currentRowH) {
-        currentRowH = h;
-      }
+  //   maxW = width / 2;
+  //   currentW = 0;
+  //   currentRowH = 0;
+  //   currentRowW = 0;
 
-      if (w < currentRowW) {
-        currentRowW = w;
-      }
+  //   for (var i = 0; i < items.length; i++) {
+  //     item = items[i];
+  //     x += w;
 
-      currentW += w - rowFixes[i];
+  //     if (h > currentRowH) {
+  //       currentRowH = h;
+  //     }
 
-      if (currentW >= maxW) {
-        y += currentRowH;
-        currentRowH = 0;
-        x = 0;
-        currentW = 0;
-      }
+  //     if (w < currentRowW) {
+  //       currentRowW = w;
+  //     }
 
-      m = item.getMargin();
-      w = item.getWidth() + m.left + m.right;
-      h = item.getHeight() + m.top + m.bottom;
-      layout.slots.push(x + rowSizes[i], y);
-    }
+  //     currentW += w - rowFixes[i];
 
-    layout.styles.width = '100%';
-    layout.styles.height = y + h + 1 + 'px';
+  //     if (currentW >= maxW) {
+  //       y += currentRowH;
+  //       currentRowH = 0;
+  //       x = 0;
+  //       currentW = 0;
+  //     }
 
-    callback(layout);
-  },
+  //     m = item.getMargin();
+  //     w = item.getWidth() + m.left + m.right;
+  //     h = item.getHeight() + m.top + m.bottom;
+  //     layout.slots.push(x + rowSizes[i], y);
+  //   }
+
+  //   layout.styles.width = '100%';
+  //   layout.styles.height = y + h + 1 + 'px';
+
+  //   callback(layout);
+  // },
+
+  // Center Grid Code End
+
   onCreate(item, element) {
     // If you want to do something after the
     // placeholder is fully created, here's
