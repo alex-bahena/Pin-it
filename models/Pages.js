@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+
 class Pages extends Model { }
 
 Pages.init(
@@ -11,6 +12,10 @@ Pages.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         url: {
             type: DataTypes.STRING(1234),
             allowNull: false,
@@ -19,6 +24,13 @@ Pages.init(
             type: DataTypes.STRING(1234),
             allowNull: false,
         },
+        category_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              table: 'category',
+              field: 'id',
+            }
+        }
     },
     {
         sequelize,
@@ -27,5 +39,8 @@ Pages.init(
         modelName: 'pages',
     }
 );
+
+
+
 
 module.exports = Pages;
