@@ -14,7 +14,7 @@
   <title>Navbar</title>
 </head>
 
-<body>
+<body class="bg-neutral-100">
 
   <!-- Navbar -->
 
@@ -140,15 +140,23 @@
 
   <!-- Navbar -->
 
-  <!-- Tiles Grid -->
+
+
+  <!-- Main Wrapper -->
 
   <div class="main-wrapper flex justify-center">
+
+    <!-- Tiles Grid -->
+
     <div class="grid my-10 basis-4/5">
+
+      <!-- New Tile -->
+
       <div class="item">
         <button type="button" id="createNewTileBtn" data-bs-toggle="modal" data-bs-target="#createTileModal"
           data-mdb-ripple="true" data-mdb-ripple-color="light">
           <div
-            class="transition hover:duration-300 p-3 rounded-lg shadow-lg bg-white flex flex-col justify-center items-center hover:bg-slate-100">
+            class="transition hover:duration-300 p-3 rounded-lg shadow-lg bg-white flex flex-col justify-center items-center hover:bg-gray-200">
             <h5 class="text-black text-xl leading-tight font-medium mb-2">New Tile</h5>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="2">
@@ -159,10 +167,12 @@
         </button>
       </div>
 
+      <!-- New Tile -->
+
       <!-- Tiles Items -->
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +206,7 @@
       </div>
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +240,7 @@
       </div>
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +274,7 @@
       </div>
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +308,7 @@
       </div>
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +342,7 @@
       </div>
 
       <div class="item">
-        <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
           <div class="flex flex-row justify-end">
             <button id="editTileBtn">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -468,7 +478,7 @@
         <div class="mt-5 md:mt-0 md:col-span-2">
           <form action="#" method="POST">
             <div class="shadow overflow-hidden sm:rounded-md">
-              <div class="px-4 py-5 bg-white sm:p-6 border-2xl">
+              <div class="px-4 py-5 bg-gray-200 sm:p-6 rounded-t-xl">
                 <div class="grid grid-cols-6 gap-6">
                   <div class="flex justify-center flex-col items-center col-span-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none"
@@ -481,41 +491,41 @@
                   <div class="col-span-6">
                     <label for="website-name" class="block text-sm font-medium text-slate-800">Website Link</label>
                     <input type="text" name="website-name" id="website-name" autocomplete="website-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md"
                       placeholder="https://www.webpage.com">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
                     <label for="username-name" class="block text-sm font-medium text-slate-800">Username/Email</label>
                     <input type="text" name="username-name" id="username-name" autocomplete="username-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md"
                       placeholder="user@mail.com">
                   </div>
 
                   <div class=" col-span-6 sm:col-span-3">
                     <label for="password-name" class="block text-sm font-medium text-slate-800">Password</label>
                     <input type="text" name="password-name" id="password-name" autocomplete="password-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md"
                       placeholder="*********">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
                     <label for="category-name" class="block text-sm font-medium text-slate-800">Category</label>
                     <input type="text" name="category-name" id="category-name" autocomplete="category-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md"
                       placeholder="Music">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
                     <label for="note-name" class="block text-sm font-medium text-slate-800">Note (optional)</label>
                     <input type="text" name="note-name" id="note-name" autocomplete="note-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md"
                       placeholder="Note text">
                   </div>
                 </div>
               </div>
               <div
-                class="flex flex-shrink-0 flex-wrap items-center justify-center px-4 py-3 bg-slate-100 text-right sm:px-6">
+                class="flex flex-shrink-0 flex-wrap items-center justify-center rounded-b-xl px-4 py-3 bg-gray-300 text-right sm:px-6">
                 <button type="button" id="saveTileBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
                 hover:bg-teal-700 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
                   Save
@@ -542,7 +552,7 @@
     id="deleteTileModal" tabindex="-1" aria-labelledby="deleteTileModal" aria-modal="true" aria-hidden="true"
     role="dialog">
     <div
-      class="modal-container bg-slate-50 md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      class="modal-container bg-gray-200 md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
       <div class="p-6 text-center text-zinc-600 font-bold">
         <h5>Tile Title</h5>
       </div>
@@ -578,15 +588,15 @@ active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
     id="createNoteModal" tabindex="-1" aria-labelledby="createNoteModal" aria-modal="true" aria-hidden="true"
     role="dialog">
     <div
-      class="modal-container bg-white mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      class="modal-container bg-gray-200 mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
       <div class="py-4">
         <input type="text" name="note-title" id="note-title" autocomplete="Note 1"
-          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md text-center"
+          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-300 rounded-md text-center"
           placeholder="Note Title">
       </div>
       <div class="modal-header p-4 mb-5 xl:w-96">
         <textarea
-          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-slate-100 bg-clip-padding border border-none border-gray-300 rounded-lg transition ease-in-out m-0 focus:ring-indigo-500 focus:border-indigo-500 text-center"
+          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gray-300 bg-clip-padding border border-none border-gray-300 rounded-lg transition ease-in-out m-0 focus:ring-indigo-500 focus:border-indigo-500 text-center"
           id="newNoteTextArea" rows="3" placeholder="Your note"></textarea>
       </div>
       <div
@@ -616,7 +626,7 @@ active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
     id="deleteNoteModal" tabindex="-1" aria-labelledby="deleteNoteModal" aria-modal="true" aria-hidden="true"
     role="dialog">
     <div
-      class="modal-container bg-slate-50 md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      class="modal-container bg-gray-200 md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
       <div class="p-6 text-center text-zinc-600 font-bold">
         <h5>Note Title</h5>
       </div>
