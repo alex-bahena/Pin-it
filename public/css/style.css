@@ -1,9 +1,8 @@
 body {
-  background: #fcfaf9;
   margin: 0;
 }
 
-.modal {
+.modal-create-tile, .modal-delete-tile, .modal-create-note {
   display: flex;
   flex-direction: column;
   justify-content: center;

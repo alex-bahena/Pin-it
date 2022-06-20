@@ -14,7 +14,7 @@
   <title>Navbar</title>
 </head>
 
-<body>
+<body class="bg-neutral-100">
 
   <!-- Navbar -->
 
@@ -35,7 +35,7 @@
                 <div class="relative inline-block text-left">
                   <div>
                     <button type="button"
-                      class="transition hover:duration-300 inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-200 focus:bg-gray-200"
+                      class="transition hover:duration-300 inline-flex justify-center w-full rounded-lg px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:font-bold hover:bg-zinc-200"
                       id="menuButton" aria-expanded="true" aria-haspopup="true">
                       Categories
                       <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -48,19 +48,19 @@
                   </div>
 
                   <div
-                    class="hidden inset-x-px top-14 absolute right-0 mt-2 w-56 rounded-md shadow-sm bg-gray-200 ring-1 ring-black ring-opacity-5 focus:outline-none z-40"
+                    class="hidden text-center inset-x-px top-14 absolute right-0 mt-2 w-40 rounded-lg shadow-sm bg-zinc-200 ring-black focus:outline-none z-40"
                     role="menu" id="dropdownOptions" aria-orientation="vertical" aria-labelledby="menuButton"
                     tabindex="-1">
                     <div class="py-1" role="none">
                       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-0">Shopping</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-1">Education</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Jobs</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Developer</a>
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-0">Shopping</a>
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-1">Education</a>
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-2">Jobs</a>
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-2">Developer</a>
                     </div>
                   </div>
                 </div>
@@ -88,19 +88,19 @@
               <li>
               <li class="flex mx-6 px-6">
                 <div class="flex">
-                  <button type="button" id="notesBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
+                  <button type="button" id="showNotesBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
                     <svg xmlns="http://www.w3.org/2000/svg"
                       class="transition hover:duration-300 h-7 w-7 text-white hover:text-amber-400" fill="none"
                       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 0 12-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </button>
                 </div>
               </li>
               <li class="flex mx-6 px-6">
                 <div class="flex">
-                  <button type="button" id="profileBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
+                  <button type="button" id="settingsBtn" aria-expanded="true" aria-haspopup="true" tabindex="-1">
                     <svg xmlns="http://www.w3.org/2000/svg"
                       class="transition hover:duration-300 h-7 w-7 text-white hover:text-amber-400" fill="none"
                       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -112,18 +112,18 @@
                 </div>
 
                 <div
-                  class="hidden top-14 absolute mt-2 mr-7 w-56 rounded-md shadow-sm bg-gray-200 ring-1 ring-black ring-opacity-5 z-40"
-                  role="menu" id="profileOptions" aria-orientation="vertical" aria-labelledby="profileBtn"
+                  class="hidden top-14 absolute mt-2 p-2 w-fit rounded-md shadow-sm bg-zinc-200 ring-1 ring-black ring-opacity-5 z-40 text-center"
+                  role="menu" id="settingsOptions" aria-orientation="vertical" aria-labelledby="settingsBtn"
                   tabindex="-1">
-                  <div class="py-1" role="none">
+                  <div class="py-1 flex flex-col items-center" role="none">
                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                     <p href="#" class="text-black font-bold font-extrabold block px-4 py-2 text-sm" role="menuitem"
                       tabindex="-1" id="menu-item-0">Hello "User"</p>
                     <a href="#"
-                      class="transition hover:duration-300 text-gray-700 hover:text-gray-800 hover:font-bold block px-4 py-2 text-sm"
+                      class="transition hover:duration-300 text-gray-700 hover:font-bold block px-4 py-2 text-sm"
                       role="menuitem" tabindex="-1" id="menu-item-1">Profile</a>
                     <button
-                      class="transition hover:duration-300 rounded-md border bg-red-500 text-white hover:bg-red-600 block px-4 py-2 text-sm"
+                      class="transition hover:duration-300 rounded-md border bg-red-500 text-white hover:bg-red-600 block px-5 py-1 text-sm"
                       role="menuitem" tabindex="-1" id="menu-item-2">Log
                       Out</button>
                   </div>
@@ -140,324 +140,345 @@
 
   <!-- Navbar -->
 
-  <!-- Tiles Grid -->
-
-  <div class="grid my-7 md:my-20">
 
 
-    <div class="item">
-      <button type="button" id="createNewCardBtn" data-bs-toggle="modal" data-bs-target="#createCardModal"
-        data-mdb-ripple="true" data-mdb-ripple-color="light">
-        <div
-          class="transition hover:duration-300 p-3 rounded-lg shadow-lg bg-white max-w-sm flex flex-col justify-center items-center hover:bg-slate-100">
-          <h5 class="text-purple-600 text-xl leading-tight font-medium mb-2">New Tile</h5>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-700" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
+  <!-- Main Wrapper -->
+
+  <div class="main-wrapper flex justify-center">
+
+    <!-- Tiles Grid -->
+
+    <div class="grid my-10 basis-4/5">
+
+      <!-- New Tile -->
+
+      <div class="item">
+        <button type="button" id="createNewTileBtn" data-bs-toggle="modal" data-bs-target="#createTileModal"
+          data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div
+            class="transition hover:duration-300 p-3 rounded-lg shadow-lg bg-white flex flex-col justify-center items-center hover:bg-gray-200">
+            <h5 class="text-black text-xl leading-tight font-medium mb-2">New Tile</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <!-- New Tile -->
+
+      <!-- Tiles Items -->
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">Amazon</h5>
+          <p class="text-gray-700 text-base mb-4">
+            amazon@mail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">Spotify</h5>
+          <p class="text-gray-700 text-base mb-4">
+            spotify@mail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">GitHub</h5>
+          <p class="text-gray-700 text-base mb-4">
+            github@mail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">LinkedIn</h5>
+          <p class="text-gray-700 text-base mb-4">
+            linkedin@mail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">Tailwind</h5>
+          <p class="text-gray-700 text-base mb-4">
+            tailwind@mail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="transition hover:duration-300 hover:bg-gray-200 block p-3 rounded-lg shadow-lg bg-white">
+          <div class="flex flex-row justify-end">
+            <button id="editTileBtn">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+            </button>
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h5 class="text-zinc-700 text-xl mb-2">YouTube</h5>
+          <p class="text-gray-700 text-base mb-4">
+            youtube@mail.com
+          </p>
+        </div>
+      </div>
+
+      <!-- Tiles Items-->
+
+
+
+    </div>
+
+    <!-- Tiles Grid -->
+
+    <!-- Notes Section -->
+
+    <div
+      class="hidden ease-in-out flex flex-col flex-start my-12 p-4 shadow-lg bg-zinc-200 h-fit w-1/7 rounded-xl items-center"
+      role="none" id="notesContainer">
+      <div class="flex flex-row items-center">
+        <h2 class="text-black font-bold my-2 text-lg">Notes</h2>
+        <button class="" id="createNoteBtn" data-bs-toggle="modal" data-bs-target="#createNoteModal">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 m-2 transition hover:duration-300 text-purple-500 hover:text-purple-700" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-        </div>
-      </button>
-    </div>
-
-    <!-- Tiles Items -->
-
-
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
+        </button>
+      </div>
+      <div class="flex flex-row items-center">
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:font-bold" role="menuitem" tabindex="-1"
+          id="menu-item-0">
+          Shopping List
+        </a>
+        <button id="" data-bs-toggle="modal" data-bs-target="#deleteNoteModal">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
           </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">Amazon</h5>
-        <p class="text-gray-700 text-base mb-4">
-          amazon@mail.com
-        </p>
+        </button>
+        <button id="deleteNoteModalBtn" data-bs-toggle="modal" data-bs-target="#deleteNoteModal">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-row items-center">
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:font-bold" role="menuitem" tabindex="-1"
+          id="menu-item-1">Pending Homeworks</a>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-row items-center">
+        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:font-bold" role="menuitem" tabindex="-1"
+          id="menu-item-2">Doctor Appointment</a>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
       </div>
     </div>
 
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">Spotify</h5>
-        <p class="text-gray-700 text-base mb-4">
-          spotify@mail.com
-        </p>
-      </div>
-    </div>
+    <!-- Notes Section -->
 
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">GitHub</h5>
-        <p class="text-gray-700 text-base mb-4">
-          github@mail.com
-        </p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">LinkedIn</h5>
-        <p class="text-gray-700 text-base mb-4">
-          linkedin@mail.com
-        </p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">Tailwind</h5>
-        <p class="text-gray-700 text-base mb-4">
-          tailwind@mail.com
-        </p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">NodeJS</h5>
-        <p class="text-gray-700 text-base mb-4">
-          nodejs@mail.com
-        </p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">YouTube</h5>
-        <p class="text-gray-700 text-base mb-4">
-          youtube@mail.com
-        </p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="transition hover:duration-300 hover:bg-slate-50 block p-3 rounded-lg shadow-lg bg-white max-w-sm">
-        <div class="flex flex-row justify-end">
-          <button id="editCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-zinc-500 hover:text-zinc-600" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-            </svg>
-          </button>
-          <button id="deleteCardBtn">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h5 class="text-zinc-700 text-xl mb-2">Reddit</h5>
-        <p class="text-gray-700 text-base mb-4">
-          reddit@mail.com
-        </p>
-      </div>
-    </div>
   </div>
-
-  <!-- Tiles Items-->
-
-  <!-- Notes Section -->
-
-
-
-
-  <!-- Notes Section End -->
 
   <!-- Modal Create Tile-->
 
   <div
-    class="modal hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
-    id="createCardModal" tabindex="-1" aria-labelledby="createCardModal" aria-modal="true" aria-hidden="true"
+    class="modal-create-tile hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
+    id="createTileModal" tabindex="-1" aria-labelledby="createTileModal" aria-modal="true" aria-hidden="true"
     role="dialog">
     <div class="modal-container flex justify-center mt-10 sm:mt-0">
       <div class="md:grid">
         <div class="mt-5 md:mt-0 md:col-span-2">
           <form action="#" method="POST">
             <div class="shadow overflow-hidden sm:rounded-md">
-              <div class="px-4 py-5 bg-white sm:p-6 border-2xl">
+              <div class="px-4 py-5 bg-white sm:p-6 rounded-t-xl">
                 <div class="grid grid-cols-6 gap-6">
                   <div class="flex justify-center flex-col items-center col-span-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-700 my-3" fill="none"
@@ -468,50 +489,50 @@
                     <h2>New Tile</h2>
                   </div>
                   <div class="col-span-6">
-                    <label for="street-address" class="block text-sm font-medium text-slate-800">Website Link</label>
-                    <input type="text" name="street-address" id="street-address" autocomplete="street-address"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                    <label for="website-name" class="block text-sm font-medium text-slate-800">Website Link</label>
+                    <input type="text" name="website-name" id="website-name" autocomplete="website-name"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md"
                       placeholder="https://www.webpage.com">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium text-slate-800">Username/Email</label>
-                    <input type="text" name="website-link" id="first-name" autocomplete="given-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                    <label for="username-name" class="block text-sm font-medium text-slate-800">Username/Email</label>
+                    <input type="text" name="username-name" id="username-name" autocomplete="username-name"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md"
                       placeholder="user@mail.com">
                   </div>
 
                   <div class=" col-span-6 sm:col-span-3">
-                    <label for="last-name" class="block text-sm font-medium text-slate-800">Password</label>
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                    <label for="password-name" class="block text-sm font-medium text-slate-800">Password</label>
+                    <input type="text" name="password-name" id="password-name" autocomplete="password-name"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md"
                       placeholder="*********">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium text-slate-800">Category</label>
-                    <input type="text" name="website-link" id="first-name" autocomplete="given-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                    <label for="category-name" class="block text-sm font-medium text-slate-800">Category</label>
+                    <input type="text" name="category-name" id="category-name" autocomplete="category-name"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md"
                       placeholder="Music">
                   </div>
 
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="last-name" class="block text-sm font-medium text-slate-800">Note (optional)</label>
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-slate-100 rounded-md"
+                    <label for="note-name" class="block text-sm font-medium text-slate-800">Note (optional)</label>
+                    <input type="text" name="note-name" id="note-name" autocomplete="note-name"
+                      class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md"
                       placeholder="Note text">
                   </div>
                 </div>
               </div>
               <div
-                class="flex flex-shrink-0 flex-wrap items-center justify-center px-4 py-3 bg-slate-100 text-right sm:px-6">
-                <button type="button" id="createCardBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
-                  hover:bg-teal-700 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
+                class="flex flex-shrink-0 flex-wrap items-center justify-center rounded-b-xl px-4 py-3 bg-gray-200 text-right sm:px-6">
+                <button type="button" id="saveTileBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
+                hover:bg-teal-700 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
                   Save
                 </button>
                 <button type="button"
                   class="inline-block mx-2 px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-red-600 transition duration-150 ease-in-out"
-                  id="closeCardBtn" data-bs-dismiss="modal">
+                  id="cancelNewTileBtn" data-bs-dismiss="modal">
                   Cancel
                 </button>
               </div>
@@ -527,11 +548,11 @@
   <!-- Modal Delete Tile-->
 
   <div
-    class="modal hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
-    id="deleteCardModal" tabindex="-1" aria-labelledby="deleteCardModal" aria-modal="true" aria-hidden="true"
+    class="modal-delete-tile hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
+    id="deleteTileModal" tabindex="-1" aria-labelledby="deleteTileModal" aria-modal="true" aria-hidden="true"
     role="dialog">
     <div
-      class="modal-container bg-slate-50 md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      class="modal-container bg-white md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
       <div class="p-6 text-center text-zinc-600 font-bold">
         <h5>Tile Title</h5>
       </div>
@@ -543,28 +564,103 @@
       <br>
       <div
         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center p-4 border-t border-gray-200 rounded-b-md">
-        <button type="button" id="closeDeleteCardBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
-            hover:bg-teal-700
-            active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
+        <button type="button" id="cancelDeleteTileModalBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
+hover:bg-teal-700
+active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
           Cancel
         </button>
         <button type="button"
           class="inline-block mx-2 px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-red-600 transition duration-150 ease-in-out"
-          id="deleteCardBtn">
+          id="deleteTileBtn" data-bs-dismiss="modal">
           Delete
         </button>
       </div>
       <br>
     </div>
+  </div>
 
-    <!-- Modal Delete Tile-->
+  <!-- Modal Delete Tile-->
 
-    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
-      integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-    <script src="./navbar.js"></script>
+  <!-- Modal Create Note-->
+
+  <div
+    class="modal-create-note hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
+    id="createNoteModal" tabindex="-1" aria-labelledby="createNoteModal" aria-modal="true" aria-hidden="true"
+    role="dialog">
+    <div
+      class="modal-container bg-white mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      <div class="py-4">
+        <input type="text" name="note-title" id="note-title" autocomplete="Note 1"
+          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md text-center"
+          placeholder="Note Title">
+      </div>
+      <div class="modal-header p-4 mb-5 xl:w-96">
+        <textarea
+          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gray-200 bg-clip-padding border border-none border-gray-300 rounded-lg transition ease-in-out m-0 focus:ring-indigo-500 focus:border-indigo-500 text-center"
+          id="newNoteTextArea" rows="3" placeholder="Your note"></textarea>
+      </div>
+      <div
+        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center p-4 border-t border-gray-200 rounded-b-md">
+        <button type="button" id="saveNoteBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
+hover:bg-teal-700
+active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
+          Save
+        </button>
+        <button type="button"
+          class="inline-block mx-2 px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-red-600 transition duration-150 ease-in-out"
+          id="cancelNoteBtn" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <!-- Modal Create Note-->
+
+
+  <!-- Modal Delete Note-->
+
+  <div
+    class="modal-delete-tile hidden top-0 left-0 fixed block insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-40"
+    id="deleteNoteModal" tabindex="-1" aria-labelledby="deleteNoteModal" aria-modal="true" aria-hidden="true"
+    role="dialog">
+    <div
+      class="modal-container bg-white md:max-w-xl mx-auto rounded-xl z-50 overflow-y-auto flex flex-col flex-wrap justify-center items-center">
+      <div class="p-6 text-center text-zinc-600 font-bold">
+        <h5>Note Title</h5>
+      </div>
+      <div class="modal-header p-4">
+        <p class="text-m text-zinc-600 text-center px-6">Are you sure you want to delete this
+          Note?
+        </p>
+      </div>
+      <br>
+      <div
+        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-center p-4 border-t border-gray-200 rounded-b-md">
+        <button type="button" id="cancelDeleteNoteModalBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md 
+hover:bg-teal-700
+active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button type="button"
+          class="inline-block mx-2 px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-red-600 transition duration-150 ease-in-out"
+          id="deleteNoteBtn" data-bs-dismiss="modal">
+          Delete
+        </button>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <!-- Modal Delete Note-->
+
+  <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+    integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+  <script src="./navbar.js"></script>
 
 </body>
 

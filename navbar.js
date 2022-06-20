@@ -1,13 +1,46 @@
+// Tiles Dropdown
+
 const tilesDropdownBtn = document.getElementById("menuButton")
 const tilesOptions = document.getElementById("dropdownOptions")
-const profileBtn = document.getElementById("profileBtn")
-const profileOptions = document.getElementById("profileOptions")
-const createNewCardBtn = document.getElementById("createNewCardBtn")
-const createCardModal = document.getElementById("createCardModal")
-const closeCardBtn = document.getElementById("closeCardBtn")
-const deleteCardModal = document.getElementById("deleteCardModal")
-const deleteCardBtn = document.getElementById("deleteCardBtn")
-const closeDeleteCardBtn = document.getElementById("closeDeleteCardBtn")
+
+// Show Notes
+
+const showNotesBtn = document.getElementById("showNotesBtn")
+const notesContainer = document.getElementById("notesContainer")
+
+// Settings
+
+const settingsBtn = document.getElementById("settingsBtn")
+const settingsOptions = document.getElementById("settingsOptions")
+
+// New Tile
+
+const createTileModal = document.getElementById("createTileModal")
+const createNewTileBtn = document.getElementById("createNewTileBtn")
+const saveTileBtn = document.getElementById("saveTileBtn")
+const cancelNewTileBtn = document.getElementById("cancelNewTileBtn")
+
+// Delete Tile
+
+const deleteTileModal = document.getElementById("deleteTileModal")
+const deleteTileModalBtn = document.getElementById("deleteTileModalBtn")
+const cancelDeleteTileModalBtn = document.getElementById("cancelDeleteTileModalBtn")
+const deleteTileBtn = document.getElementById("deleteTileBtn")
+
+//  New Note
+
+const createNoteModal = document.getElementById("createNoteModal")
+const createNoteBtn = document.getElementById("createNoteBtn")
+const saveNoteBtn = document.getElementById("saveNoteBtn")
+const cancelNoteBtn = document.getElementById("cancelNoteBtn")
+
+//  Delete Note 
+
+const deleteNoteModal = document.getElementById("deleteNoteModal")
+const deleteNoteModalBtn = document.getElementById("deleteNoteModalBtn")
+const cancelDeleteNoteModalBtn = document.getElementById("cancelDeleteNoteModalBtn")
+const deleteNoteBtn = document.getElementById("deleteNoteBtn")
+
 
 // tilesDropdownBtn.onclick = function () {
 //   tilesOptions.classList.toggle("hidden")
@@ -23,31 +56,54 @@ tilesOptions.onmouseleave = function () {
   tilesOptions.classList.toggle("hidden")
 }
 
-profileBtn.onclick = function () {
-  profileOptions.classList.toggle("hidden")
-  profileOptions.classList.toggle("block")
+settingsBtn.onclick = function () {
+  settingsOptions.classList.toggle("hidden")
+  settingsOptions.classList.toggle("block")
 }
 
-createNewCardBtn.onclick = function () {
-  createCardModal.style.display = "flex"
+showNotesBtn.onclick = function () {
+  notesContainer.classList.toggle("hidden")
+  notesContainer.classList.toggle("block")
 }
 
-closeCardBtn.onclick = function () {
-  createCardModal.style.display = "none";
+createNewTileBtn.onclick = function () {
+  createTileModal.style.display = "flex"
 }
 
-deleteCardBtn.onclick = function () {
-  deleteCardModal.style.display = "flex"
+cancelNewTileBtn.onclick = function () {
+  createTileModal.style.display = "none";
 }
 
-closeDeleteCardBtn.onclick = function () {
-  deleteCardModal.style.display = "none";
+deleteTileModalBtn.onclick = function () {
+  deleteTileModal.style.display = "flex"
+}
+
+cancelDeleteTileModalBtn.onclick = function () {
+  deleteTileModal.style.display = "none";
+}
+
+createNoteBtn.onclick = function () {
+  createNoteModal.style.display = "flex"
+}
+
+cancelNoteBtn.onclick = function () {
+  createNoteModal.style.display = "none";
+}
+
+deleteNoteModalBtn.onclick = function () {
+  deleteNoteModal.style.display = "flex"
+}
+
+cancelDeleteNoteModalBtn.onclick = function () {
+  deleteNoteModal.style.display = "none";
 }
 
 window.onclick = function (event) {
-  if (event.target == createCardModal || event.target == deleteCardModal) {
-    createCardModal.style.display = "none";
-    deleteCardModal.style.display = "none";
+  if (event.target == createTileModal || event.target == deleteTileModal || event.target == createNoteModal || event.target == deleteNoteModal) {
+    createTileModal.style.display = "none";
+    createNoteModal.style.display = "none";
+    deleteTileModal.style.display = "none";
+    deleteNoteModal.style.display = "none";
   }
 }
 
