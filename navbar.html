@@ -34,6 +34,7 @@
               <li class="flex nav-item mx-4 my-6 md:my-0">
                 <div class="relative inline-block text-left">
                   <div>
+                    <!-- This code is for the options  -->
                     <button type="button"
                       class="transition hover:duration-300 inline-flex justify-center w-full rounded-lg px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:font-bold hover:bg-zinc-200"
                       id="menuButton" aria-expanded="true" aria-haspopup="true">
@@ -59,13 +60,38 @@
                         tabindex="-1" id="menu-item-1">Education</a>
                       <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
                         tabindex="-1" id="menu-item-2">Jobs</a>
+                        <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-2">Social</a>
                       <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
                         tabindex="-1" id="menu-item-2">Developer</a>
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                        tabindex="-1" id="menu-item-2">Lifestyle</a>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="flex mx-6 basis-3/6 justify-center">
+
+              <body>
+                <form autocomplete="off">
+                  <div>
+                    <input type="text" id="input" placeholder="Type a name here..." />
+                  </div>
+                  <ul class="list"></ul>
+                </form>
+                <!--Script-->
+                <script src="script.js"></script>
+              </body>
+      
+              <!-- <form autocomplete="on">
+                <div>
+                  <input type="text" id="input" placeholder="Website's name here..." />
+                </div>
+                <ul class="list"></ul>
+              </form> -->
+
+
+
+              <!-- <li class="flex mx-6 basis-3/6 justify-center">
                 <form class="flex items-center w-2/4">
                   <label for="simple-search" class="sr-only">Search</label>
                   <div class="relative w-full">
@@ -84,7 +110,10 @@
                   <button type="submit"
                     class="transition hover:duration-300 p-2.5 ml-2 text-sm font-medium text-white bg-teal-500 rounded-lg border-none hover:bg-teal-600">Search</button>
                 </form>
-              </li>
+              </li> -->
+
+
+
               <li>
               <li class="flex mx-6 px-6">
                 <div class="flex">
