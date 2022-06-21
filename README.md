@@ -27,10 +27,11 @@ This page is an overview of Pin-it documentation and related resources
 
 
 ===================================================================================
-# Frenend - code
+# Frontend - code
 This section describes the main FE features and how they work...
 
 # HTML
+This is how Pin-it looks like from the landing page.
 
 # CSS
 
