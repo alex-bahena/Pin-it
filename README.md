@@ -26,8 +26,6 @@ Then a new card is created with empty fields to add a new app and my profile acc
 This page is an overview of Pin-it documentation and related resources
 
 # Frontend - code
-This section describes the main FE features and how they work.
-
 The app was built with help of the following technologies:
 
 * TailWind
