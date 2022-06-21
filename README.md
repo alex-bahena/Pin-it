@@ -14,7 +14,16 @@ As a user I want to be able to store the applications I usually use in a daily b
 This app should cover all the following criteria:
 
 When I get into my app.
-Then I
+Then I am presented with a nav bar.
+When I look into the nav bar.
+Then I am presented with a search input, categories options and log-in button.
+When I click in log-in button.
+Then I am presented in a new page, where I can submit my account info.
+When I log-in my account.
+Then I get in and a log out-button appears at the top-right of the page.
+When I click in a new card.
+Then a new card is created with empty fields to add a new app and my profile account.
+
 
 
 
