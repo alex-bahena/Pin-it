@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Pages } = require('../models');
+//.
 
 router.get("/", async (req, res) => {
     try {
@@ -19,6 +20,7 @@ router.get("/", async (req, res) => {
         res.render("homepage", {
             pages,
             loggedIn: req.session.loggedIn,
+            login: true,
             hasPages: pages.length > 0,
             testCSS: true
         });

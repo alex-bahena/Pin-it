@@ -1,5 +1,6 @@
 <main>
     <h1>Homepage</h1>
+    {{#if login}}
     {{#if hasPages }}
     <div class="grid">
         {{#each pages}}
@@ -18,5 +19,6 @@
     </div>
     {{ else }}
     <h1>No pages Found!</h1>
+    {{/if}}
     {{/if}}
 </main>
