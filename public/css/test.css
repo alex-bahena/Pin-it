@@ -1,0 +1,18 @@
+
+
+.grid{
+    margin-top: 10px;
+    
+}
+
+
+.card {
+    display: block;
+    background-color: aqua;
+    height: 200px;
+    width: 295px;
+    line-height: 200px;
+    margin: 5px;
+    text-align: center;
+   
+  }
