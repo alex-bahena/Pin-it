@@ -40,9 +40,6 @@ The app was built with help of the following technologies:
 # HTML
 This is how Pin-it looks like from the landing page.
 
-# CSS
-
-
 # Backend - code
 This section describes the main FE features and how they work...
 
