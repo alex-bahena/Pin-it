@@ -22,13 +22,6 @@ Then I get in and a log out-button appears at the top-right of the page.
 When I click in a new card.
 Then a new card is created with empty fields to add a new app and my profile account.
 
-
-
-
-# High Level Architecture Design
-
-
-===================================================================================
 # Getting Started
 This page is an overview of Pin-it documentation and related resources
 
@@ -48,6 +41,7 @@ The app was built with help of the following technologies:
 This is how Pin-it looks like from the landing page.
 
 # CSS
+
 
 # Backend - code
 This section describes the main FE features and how they work...
