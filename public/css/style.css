@@ -41,29 +41,9 @@ body {
   height: 100%;
 }
 
-
-
-
-.list {
-  width: 100%;
-  top: 0;
-  background-color: #ffffff;
-  border-radius: 0 0 5px 5px;
-  z-index: 40;
-}
 .list-items {
   padding: 10px 5px;
 }
 .list-items:hover {
   background-color: #dddddd;
 }
-
-
-/* .popup {
-
-  justify-content: center;
-  justify-items: center;
-  allign-content: center;
-  allign-items: center;
-  
-} */
