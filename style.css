@@ -6,7 +6,7 @@ body {
   
   .grid {
     position: relative;
-   
+   background-color: aqua;
 
   }
   
@@ -38,4 +38,7 @@ body {
 .miniicons {
   display: flex;
   flex-direction: row-reverse;
+  
+  ;
+  
 }
