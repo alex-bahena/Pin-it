@@ -7,8 +7,6 @@ The purpose of this app is to improve the management of our applications, saving
 
 # MVP
 
-===================================================================================
-
 As a user I want to be able to store the applications I usually use in a daily basis, so I can organize and get into my apps faster.
 
 This app should cover all the following criteria:
