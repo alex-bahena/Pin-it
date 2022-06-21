@@ -1,16 +1,12 @@
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const hbs = exphbs.create({});
-const morgan = require("morgan")
-const User = require('./models/user');
 
-//const routes = require('./controllers');
+const routes = require('./controllers');
 const sequelize = require('./config/connection');
-//const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -27,37 +23,17 @@ const sess = {
 
 app.use(session(sess));
 
-//const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-
-app.use(morgan("dev"))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use(routes);
-const homeRoutes = require ("./routes/home")
-const registerRoutes = require ("./routes/register.js")
-app.use("/register", registerRoutes)
-app.use("/", homeRoutes)
+app.use(routes);
 
-sequelize
-.sync({ force: false })
-//.sync()
-.then(result => {
-  return User.findByPk(1);
-  
-})
-.then(user => {
-  if (!user) {
-    return User.create({ name: 'Javier', email: 'test@test.com' });
-  }
-  return user;
-})
-.then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
