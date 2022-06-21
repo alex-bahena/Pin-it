@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Pages } = require('../models');
+const { User, Pages, Category } = require('../models');
 //.
 
 router.get("/", async (req, res) => {
@@ -7,16 +7,22 @@ router.get("/", async (req, res) => {
         const dbPageData = await Pages.findAll({
             include: [
                 {   
-                    all: true,
-                    nested: true,
-                    model: Pages,
-                    attributes: ['name'],
+                    //all: true,
+                    //nested: true,
+                    model: Category,
+                    attributes: ['categories'],
                 },
             ],
         });
-        const pages = dbPageData.map((gallery) =>
-            gallery.get({ plain: true })
+
+        //const pages = dbPageData.map((gallery) =>
+        //    gallery.get({ plain: true })
+        //);
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
         );
+
+        console.log(pages)
         res.render("homepage", {
             pages,
             loggedIn: req.session.loggedIn,
