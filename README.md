@@ -37,7 +37,14 @@ This page is an overview of Pin-it documentation and related resources
 
 ===================================================================================
 # Frontend - code
-This section describes the main FE features and how they work...
+This section describes the main FE features and how they work.
+
+The app was built with help of the following technologies:
+
+* TailWind
+* CSS
+* HTML
+* JavaScript
 
 # HTML
 This is how Pin-it looks like from the landing page.
