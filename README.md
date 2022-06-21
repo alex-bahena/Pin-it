@@ -33,7 +33,7 @@ The app was built with help of the following technologies:
 * HTML
 * JavaScript
 
-# HTML
+# Pin-it Deployed.
 This is how Pin-it looks like from the landing page.
 
 # Backend - code
