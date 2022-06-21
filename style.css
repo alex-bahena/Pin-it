@@ -38,4 +38,7 @@ body {
 .miniicons {
   display: flex;
   flex-direction: row-reverse;
+  
+  ;
+  
 }
