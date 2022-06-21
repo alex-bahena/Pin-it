@@ -60,7 +60,7 @@
                         tabindex="-1" id="menu-item-1">Education</a>
                       <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
                         tabindex="-1" id="menu-item-2">Jobs</a>
-                        <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
+                      <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
                         tabindex="-1" id="menu-item-2">Social</a>
                       <a href="#" class="text-gray-700 hover:font-bold block px-4 py-2 text-sm" role="menuitem"
                         tabindex="-1" id="menu-item-2">Developer</a>
@@ -71,16 +71,20 @@
                 </div>
               </li>
 
+              <li class="flex mx-6 basis-3/6 justify-center ">
                 <form autocomplete="off">
                   <div class="popup">
-                    <input type="text" id="input" placeholder="Type a name here..." />
-                  </div> 
-                    <div class="relative flex flex-col justify-center">
-                      <ul class="list right-0 content-center text-center items-center inset-x-px w-40 absolute z-40"></ul>
-                    </div>
+                    <input class="rounded-lg w-80 focus:ring-teal-600 focus:border-teal-600 text-center" type="text"
+                      id="input" placeholder="Search Tile" />
+                  </div>
+                  <div class="relative flex flex-col justify-center">
+                    <ul class="input right-0 content-center text-center items-center inset-x-px w-40 absolute z-40">
+                    </ul>
+                  </div>
                 </form>
-                <!--Script-->
-                <script src="script.js"></script>
+              </li>
+
+              <!--Script->
 
               <!-- <form autocomplete="on">
                 <div>

@@ -57,6 +57,7 @@ function removeElements() {
     item.remove();
   });
 }
+
 /////////////////////////////////////////////////////////////////////////////////
 
 // Tiles Dropdown
@@ -215,5 +216,5 @@ function loadLayout(grid, serializedLayout) {
     }
   }
 
-  grid.sort(newItems, {layout: 'instant'});
+  grid.sort(newItems, { layout: 'instant' });
 }
