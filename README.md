@@ -23,7 +23,7 @@ When I click in a new card.
 Then a new card is created with empty fields to add a new app and my profile account.
 
 # Getting Started
-This page is an overview of Pin-it documentation and related resources
+These are the instructions to follow as a user:
 
 # Frontend - code
 The app was built with help of the following technologies:
