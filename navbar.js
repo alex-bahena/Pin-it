@@ -1,5 +1,66 @@
-// Tiles Dropdown
+//////// WEBSITE SEARCH
+let names = [
+  "amazon",
+  "gmail",
+  "youtube",
+  "google-drive",
+  "facebook",
+  "instragram",
+  "google-translate",
+  "whatsapp",
+  "outlook",
+  "github",
+  "udemy",
+  "linkedin",
+];
+//Sort names in ascending order
+let sortedNames = names.sort();
 
+//reference
+let input = document.getElementById("input");
+
+//Execute function on keyup
+input.addEventListener("keyup", (e) => {
+  //loop through above array
+  //Initially remove all elements ( so if user erases a letter or adds new letter then clean previous outputs)
+  removeElements();
+  for (let i of sortedNames) {
+    //convert input to lowercase and compare with each string
+
+    if (
+      i.toLowerCase().startsWith(input.value.toLowerCase()) &&
+      input.value != ""
+    ) {
+      //create li element
+      let listItem = document.createElement("li");
+      //One common class name
+      listItem.classList.add("list-items");
+      listItem.style.cursor = "pointer";
+      listItem.setAttribute("onclick", "displayNames('" + i + "')");
+      //Display matched part in bold
+      let word = "<b>" + i.substr(0, input.value.length) + "</b>";
+      word += i.substr(input.value.length);
+      //display the value in array
+      listItem.innerHTML = word;
+      document.querySelector(".list").appendChild(listItem);
+    }
+  }
+});
+function displayNames(value) {
+  input.value = value;
+  removeElements();
+}
+function removeElements() {
+  //clear all the item
+  let items = document.querySelectorAll(".list-items");
+  items.forEach((item) => {
+    item.remove();
+  });
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// Tiles Dropdown
 const tilesDropdownBtn = document.getElementById("menuButton")
 const tilesOptions = document.getElementById("dropdownOptions")
 
@@ -107,137 +168,53 @@ window.onclick = function (event) {
   }
 }
 
-var phPool = [];
-var phElem = document.createElement('div');
+initGrid();
 
+function initGrid() {
+  var grid = new Muuri('.grid', {
+    dragEnabled: true,
+    layoutOnInit: false
+  }).on('move', function () {
+    saveLayout(grid);
+  });
 
+  var layout = window.localStorage.getItem('layout');
+  if (layout) {
+    loadLayout(grid, layout);
+  } else {
+    grid.layout(true);
+  }
+}
 
-var grid = new Muuri(".grid", {
-  dragEnabled: true,
-  createElement(item) {
-    return phPool.pop() || phElem.cloneNode();
-  },
+function serializeLayout(grid) {
+  var itemIds = grid.getItems().map(function (item) {
+    return item.getElement().getAttribute('data-id');
+  });
+  return JSON.stringify(itemIds);
+}
 
-  // Center Grid Code
+function saveLayout(grid) {
+  var layout = serializeLayout(grid);
+  window.localStorage.setItem('layout', layout);
+}
 
-  // layout: function (grid, layoutId, items, width, height, callback) {
+function loadLayout(grid, serializedLayout) {
+  var layout = JSON.parse(serializedLayout);
+  var currentItems = grid.getItems();
+  var currentItemIds = currentItems.map(function (item) {
+    return item.getElement().getAttribute('data-id')
+  });
+  var newItems = [];
+  var itemId;
+  var itemIndex;
 
-  //   var layout = {
-  //     id: layoutId,
-  //     items: items,
-  //     slots: [],
-  //     styles: {},
-  //   };
+  for (var i = 0; i < layout.length; i++) {
+    itemId = layout[i];
+    itemIndex = currentItemIds.indexOf(itemId);
+    if (itemIndex > -1) {
+      newItems.push(currentItems[itemIndex])
+    }
+  }
 
-  //   var item;
-  //   var m;
-  //   var x = 0;
-  //   var y = 0;
-  //   var w = 0;
-  //   var h = 0;
-
-  //   var maxW = width / 2;
-  //   var currentW = 0;
-  //   var currentRowH = 0;
-  //   var currentRowW = 0;
-  //   var rowSizes = [];
-  //   var rowFixes = [];
-
-  //   var xPre, yPre, wPre, hPre;
-  //   var numToFix = 0;
-
-  //   for (var i = 0; i < items.length; i++) {
-  //     item = items[i];
-
-  //     m = item.getMargin();
-  //     wPre = item.getWidth() + m.left + m.right;
-  //     hPre = item.getHeight() + m.top + m.bottom;
-  //     xPre += wPre;
-
-  //     if (hPre > currentRowH) {
-  //       currentRowH = hPre;
-  //     }
-
-  //     if (w < currentRowW) {
-  //       currentRowW = wPre;
-  //     }
-
-  //     rowSizes.push(width / 2);
-  //     numToFix++;
-  //     currentW += wPre;
-
-  //     var k = 0;
-
-  //     for (var j = 0; j < numToFix; j++) {
-  //       rowSizes[i - j] -= wPre / 2;
-  //     }
-
-  //     if (numToFix > 1) {
-  //       rowSizes[i] -= (wPre / 2) * (numToFix - 1);
-  //       k += (wPre / 2);
-  //     }
-
-  //     currentW -= k;
-  //     rowFixes.push(k);
-
-  //     if (currentW >= maxW) {
-  //       yPre += currentRowH;
-  //       currentRowH = 0;
-  //       xPre = 0;
-  //       numToFix -= 1;
-  //       currentW = 0;
-  //       numToFix = 0;
-  //       k = 0;
-  //     }
-  //   }
-
-  //   maxW = width / 2;
-  //   currentW = 0;
-  //   currentRowH = 0;
-  //   currentRowW = 0;
-
-  //   for (var i = 0; i < items.length; i++) {
-  //     item = items[i];
-  //     x += w;
-
-  //     if (h > currentRowH) {
-  //       currentRowH = h;
-  //     }
-
-  //     if (w < currentRowW) {
-  //       currentRowW = w;
-  //     }
-
-  //     currentW += w - rowFixes[i];
-
-  //     if (currentW >= maxW) {
-  //       y += currentRowH;
-  //       currentRowH = 0;
-  //       x = 0;
-  //       currentW = 0;
-  //     }
-
-  //     m = item.getMargin();
-  //     w = item.getWidth() + m.left + m.right;
-  //     h = item.getHeight() + m.top + m.bottom;
-  //     layout.slots.push(x + rowSizes[i], y);
-  //   }
-
-  //   layout.styles.width = '100%';
-  //   layout.styles.height = y + h + 1 + 'px';
-
-  //   callback(layout);
-  // },
-
-  // Center Grid Code End
-
-  onCreate(item, element) {
-    // If you want to do something after the
-    // placeholder is fully created, here's
-    // the place to do it.
-  },
-  onRemove(item, element) {
-    phPool.push(element);
-  },
-
-});
+  grid.sort(newItems, { layout: 'instant' });
+}
