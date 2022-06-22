@@ -47,3 +47,11 @@ body {
 .list-items:hover {
   background-color: #dddddd;
 }
+
+.list {
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  z-index: 40;
+}

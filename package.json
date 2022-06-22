@@ -22,6 +22,7 @@
         "handlebars": "^4.7.6",
         "morgan": "^1.10.0",
         "mysql2": "^2.2.5",
-        "sequelize": "^6.3.5"
+        "sequelize": "^6.3.5",
+        "console.table": "^0.10.0"
     }
 }
