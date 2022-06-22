@@ -1,0 +1,87 @@
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<div class="leading-normal tracking-normal text-black gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    
+  <div class="pt-48">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center pl-24">
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">Ready to put everything in order?</p>
+        <h1 class="my-4 text-5xl font-bold leading-tight">
+          Keep always organized
+        </h1>
+        <p class="leading-normal text-2xl mb-8">
+          Pin-It! is the best tool to easily organize all your tabs, usernames, passwords, and payment methods. Start to Pin-It now!
+        </p>
+        <button id="signUpBtn" class="mx-auto lg:mx-0 hover:bg-black hover:text-white bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Sign up
+        </button>
+      </div>
+  </div>
+  
+  <section class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+    <h3 class="font-bold text-2xl">Welcome back to Pin-It!</h3>
+    <p class="text-gray-600 pt-2">Log in to your account.</p>
+      
+
+    <form class = "form login-form">    
+      <section class="mt-10">
+        <form class="flex flex-col">
+          <div class="mb-6 pt-3 rounded bg-gray-200">
+            <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email-login">Email</label>
+            <input type="text" id="email-login" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+          </div>
+
+          <div class="mb-6 pt-3 rounded bg-gray-200">
+            <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password-login">Password</label>
+            <input type="password" id="password-login" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3">
+          </div>
+          
+          <div class="form-group">
+            <button class="bg-black text-white font-bold py-2 rounded shadow-lg hover:scale-105 duration-300 ease-in-out transition duration-200">Log-In</button>
+          </div>
+        </form>
+
+        <div class="max-w-lg mx-auto text-center mt-8 mb-6">
+          <a href="#" class="text-sm text-blue-500 hover:underline mb-6">Forgot your password?</a>
+        </div>
+        
+        <div class="max-w-lg mx-auto text-center mt-4 mb-2">
+          <p class="text-black">Don't have an account? <a href="#" class="font-bold hover:underline">Sign up now</a>.</p>
+        </div>
+               
+      </section>
+    </form>  
+  </section>
+
+
+  <section class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+    <h3 class="font-bold text-2xl">Create your account</h3>
+    <p class="text-gray-600 pt-2">Start to Pin-It!</p>
+    
+    <section class="mt-10">
+      <form class = "form signup-form">
+        <div class="relative z-0 w-full mb-6 group">
+          <input type="text" id="username-signup" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+          <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
+        </div>
+
+        <div class="relative z-0 w-full mb-6 group">
+          <input type="text" id="email-signup" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+          <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        </div>
+
+        <div class="relative z-0 w-full mb-6 group">
+          <input type="password" id="password-signup" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+          <label class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+        </div>
+
+        <div class="form-group"> 
+          <button type="submit" class="text-white bg-black hover:scale-105 duration-300 ease-in-out focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Sign-Up</button>
+        </div>
+      </form>
+    </section>
+  </section>
+</div>
+
+<script src="./js/login.js"></script> 
+
+
