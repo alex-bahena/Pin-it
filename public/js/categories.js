@@ -20,7 +20,15 @@
 //   document.getElementById('menu-item-0').addEventListener('click',hello());
 
  document.addEventListener("click", e => {
-    console.log(e.target);
+    
+  const Tvalue = e.target;
+  console.log(Tvalue.innerHTML);
+
   });
+ 
+// $(".categorie-list").click(function(element){
+//   var el = $(this).val();
+//   console.log(el);
+// })
 //   console.log(document + 'aqui');
 //   ${this.category}
