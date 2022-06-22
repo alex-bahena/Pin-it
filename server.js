@@ -6,12 +6,13 @@ const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const hbs = exphbs.create({});
 const morgan = require("morgan")
-
+const Database = require('./dbpull');
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 //const helpers = require('./utils/helpers');
-
+Database.pagesName();
+Database.pagesArray();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -50,3 +51,5 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+
