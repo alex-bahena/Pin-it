@@ -14,20 +14,34 @@ router.get("/", async (req, res) => {
                 },
             ],
         });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {   
+            
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
 
-        //const pages = dbPageData.map((gallery) =>
-        //    gallery.get({ plain: true })
-        //);
+        //Categories map
+    
+        const categories = dbCategoryData.map((categories) => 
+        categories.get({plain: true}));
+
+        //Pages map
         const pages = dbPageData.map((pages) =>
             pages.get({ plain: true })
         );
-
+        console.log(categories);
         console.log(pages)
         res.render("homepage", {
+            categories,
             pages,
             loggedIn: req.session.loggedIn,
             login: true,
             hasPages: pages.length > 0,
+            hasCategories: categories.length > 0,
             testCSS: true
         });
     }

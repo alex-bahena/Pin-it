@@ -55,14 +55,10 @@
                     tabindex="-1">
                     <div class="py-1" role="none">
                       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                      {{#each categories}}
                       <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-0">Shopping</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-1">Education</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Jobs</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Developer</a>
+                        role="menuitem" tabindex="-1" id="menu-item-{{@index}}">{{this.categories}}</a>
+                      {{/each}}
                     </div>
                   </div>
                 </div>
@@ -151,6 +147,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
   <script src="./js/navbar.js"></script>
+   <script src="./js/categories.js"></script>
 
-</html>
+</html> 
 

@@ -9,6 +9,9 @@ const deleteCardModal = document.getElementById("deleteCardModal")
 const deleteCardBtn = document.getElementById("deleteCardBtn")
 const closeDeleteCardBtn = document.getElementById("closeDeleteCardBtn")
 
+
+
+
 // tilesDropdownBtn.onclick = function () {
 //   tilesOptions.classList.toggle("hidden")
 //   tilesOptions.classList.toggle("block")
