@@ -53,6 +53,10 @@ saving a new online website in my page.
 
 Loggin out from Pin-it.
 
+# Futures updates
+
+Implement the Google API to log in with a google account such a gmail.
+
 # Backend - code
 This section describes the main FE features and how they work...
 
