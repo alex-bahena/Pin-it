@@ -46,7 +46,9 @@ const homeRoutes = require ("./controllers/home-routes.js")
 app.use("/", homeRoutes)
 
 app.use(routes);
-
+//handle 404
+const errorController = require('./controllers/error');
+app.use(errorController.get404);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));

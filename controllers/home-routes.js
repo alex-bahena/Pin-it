@@ -25,6 +25,7 @@ router.get("/", async (req, res) => {
         console.log(pages)
         res.render("homepage", {
             pages,
+            pageTitle: 'Pin-it',
             loggedIn: req.session.loggedIn,
             login: true,
             hasPages: pages.length > 0,

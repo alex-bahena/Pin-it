@@ -15,7 +15,7 @@
   {{/if}}
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com?plugins=forms,aspect-ratio,line-clamp"></script>
-  <title>Navbar</title>
+  <title>{{pageTitle}}</title>
 </head>
 
 <body>
@@ -152,16 +152,25 @@
   <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
   <script src="./js/navbar.js"></script>
   <script>
-        function Geek1(event) {
-            
-            if (document.getElementById("div2").click) {
-                event.stopPropagation();
-            }
+        const itemBtn = document.getElementById("div2")
+        itemBtn.addEventListener(click, goToPage)
+
+        function goToPage(){
+          window.open("http://www.google.com.mx")
         }
+
+
+
+        //function Geek1(event) {
+           // event.stopPropagation();
+            //if (document.getElementById("div2").click) {
+               // event.stopPropagation();
+            //}
+        //}
           
-        function Geek2() {
-            confirm("Outer div is clicked");
-        }
+        //function Geek2() {
+        //    confirm("Outer div is clicked");
+        //}
     </script>
 
 
