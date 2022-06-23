@@ -7,8 +7,7 @@ router.get("/", async (req, res) => {
         const dbPageData = await Pages.findAll({
             include: [
                 {   
-                    //all: true,
-                    //nested: true,
+        
                     model: Category,
                     attributes: ['categories'],
                 },
@@ -23,7 +22,23 @@ router.get("/", async (req, res) => {
                 },
             ],
         });
+const dataBase = async () => {
+    const dbPageData = await Pages.findAll({
+        include: [
+            {   
+        
+                model: Category,
+                attributes: ['categories'],
+            },
+        ],
+    });
+    const pages = dbPageData.map((pages) =>
+    pages.get({ plain: true })
+);
+console.log( JSON.stringify(pages));
+}
 
+dataBase();
         //Categories map
     
         const categories = dbCategoryData.map((categories) => 

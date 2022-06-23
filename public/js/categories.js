@@ -19,11 +19,9 @@
 
 //   document.getElementById('menu-item-0').addEventListener('click',hello());
 
- document.addEventListener("click", e => {
-    
+ document.addEventListener("click", e => { 
   const Tvalue = e.target;
   console.log(Tvalue.innerHTML);
-
   });
  
 // $(".categorie-list").click(function(element){
@@ -32,3 +30,7 @@
 // })
 //   console.log(document + 'aqui');
 //   ${this.category}
+
+
+
+
