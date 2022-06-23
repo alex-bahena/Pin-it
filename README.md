@@ -25,6 +25,9 @@ Then a new card is created with empty fields to add a new app and my profile acc
 # Getting Started
 These are the instructions to follow as a user:
 
+1. go to the following URL: 
+2. create a new account 
+
 # Frontend - code
 The app was built with help of the following technologies:
 
