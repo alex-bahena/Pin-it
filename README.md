@@ -3,7 +3,7 @@ Project Description
 Pin-it | Application designed to organize all the applications you use every day, having everything within your main internet access.
 
 # Purpose
-The purpose of this app is to improve the management of our applications, saving all our accounts in one site, avoiding wastig time looking for them one by one and improving our experience within the browser.
+The purpose of this app is to improve the management of our applications, saving all our online webistes in one site, avoiding wastig time looking for them one by one and improving our experience within the browser.
 
 # MVP
 
