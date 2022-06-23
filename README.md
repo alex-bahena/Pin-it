@@ -53,7 +53,7 @@ saving a new online website in my page.
 
 Loggin out from Pin-it.
 
-# Futures updates
+# Futures Implementations
 
 Implement the Google API to log in with a google account such a gmail.
 
