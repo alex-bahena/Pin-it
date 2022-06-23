@@ -39,6 +39,7 @@ The app was built with help of the following technologies:
 * HTML
 * JavaScript
 * mySQL
+* sequelize
 
 # Pin-it Deployed.
 This is how Pin-it looks like from the landing page.
