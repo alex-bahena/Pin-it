@@ -38,6 +38,7 @@ The app was built with help of the following technologies:
 * CSS
 * HTML
 * JavaScript
+* mySQL
 
 # Pin-it Deployed.
 This is how Pin-it looks like from the landing page.
