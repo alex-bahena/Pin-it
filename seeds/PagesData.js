@@ -41,7 +41,7 @@ const pagesData = [
         name: 'mercado-libre',
         url: 'https://www.mercadolibre.com.mx/',
         category_id: '3',
-        img: 'https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__large_plus@2x.png',
+        img: 'https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2020/03/18140935/nueva-portada-enero.jpg',
     },
     {
         name: 'google-translate',
