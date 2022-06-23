@@ -42,6 +42,14 @@ The app was built with help of the following technologies:
 # Pin-it Deployed.
 This is how Pin-it looks like from the landing page.
 
+We can see how to log in with your account.
+
+Adding a new card to your website.
+
+saving a new online website in my page.
+
+Loggin out from Pin-it.
+
 # Backend - code
 This section describes the main FE features and how they work...
 
