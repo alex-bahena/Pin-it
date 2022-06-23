@@ -26,7 +26,10 @@ Then a new card is created with empty fields to add a new app and my profile acc
 These are the instructions to follow as a user:
 
 1. go to the following URL: 
-2. create a new account 
+2. create a new account for Pin-it.
+3. Log-in your account 
+4. start adding your favorite online websites.
+5. This is how you can log out from Pin-it.
 
 # Frontend - code
 The app was built with help of the following technologies:
