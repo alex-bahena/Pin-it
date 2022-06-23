@@ -151,6 +151,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
   <script src="./js/navbar.js"></script>
+  <script>
+        function Geek1(event) {
+            
+            if (document.getElementById("div2").click) {
+                event.stopPropagation();
+            }
+        }
+          
+        function Geek2() {
+            confirm("Outer div is clicked");
+        }
+    </script>
+
 
 </html>
 
