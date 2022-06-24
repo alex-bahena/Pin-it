@@ -48,4 +48,8 @@ router.get("/login", (req, res) => {
     res.render("login")
 })
 
+router.get("/notes", (req, res) => {
+    res.render("notes")
+})
+
 module.exports = router;
