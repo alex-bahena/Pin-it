@@ -35,12 +35,13 @@ const dataBase = async () => {
     const pages = dbPageData.map((pages) =>
     pages.get({ plain: true })
 );
-console.log( JSON.stringify(pages));
+console.log(JSON.stringify(pages));
 }
 
+
 dataBase();
+
         //Categories map
-    
         const categories = dbCategoryData.map((categories) => 
         categories.get({plain: true}));
 

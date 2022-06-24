@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="./public/css/style.css" rel="stylesheet">
   {{#if testCSS}}
-        <link rel="stylesheet" href="/css/test.css"><!---->
+  <link rel="stylesheet" href="/css/test.css">
+  <!---->
   {{/if}}
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com?plugins=forms,aspect-ratio,line-clamp"></script>
@@ -56,10 +57,11 @@
                     <div class="py-1" role="none">
                       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                       {{#each categories}}
-                      <a href="#" class="categorie-list text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-{{@index}}">{{this.categories}}</a>
+                      <a href= '/{{this.categories}}'
+                        class="categorie-list-{{@index}} text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="dropdown-item-{{@index}}">{{this.categories}}</a>
                       {{/each}}
-                    </div>
+                    </div> 
                   </div>
                 </div>
               </li>
@@ -118,9 +120,13 @@
                     <a href="#" class="text-gray-700 hover:text-black hover:font-bold block px-4 py-2 text-sm"
                       role="menuitem" tabindex="-1" id="menu-item-1">Profile</a>
                     {{#if loggedIn}}
-                    <button id="logout" class="rounded-md border bg-red-500 text-white hover:font-extrabold block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Log Out</button>
+                    <button id="logout"
+                      class="rounded-md border bg-red-500 text-white hover:font-extrabold block px-4 py-2 text-sm"
+                      role="menuitem" tabindex="-1" id="menu-item-2">Log Out</button>
                     {{else}}
-                    <a href="/login"><button id="login" class="rounded-md border bg-red-500 text-white hover:font-extrabold block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Log In</button></a>
+                    <a href="/login"><button id="login"
+                        class="rounded-md border bg-red-500 text-white hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="menu-item-2">Log In</button></a>
                     {{/if}}
                   </div>
                 </div>
@@ -136,18 +142,25 @@
     <main>
       {{{body}}}
     </main>
- 
+
 
 
 </body>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
- <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-  <script src="./js/navbar.js"></script>
-   <script src="./js/categories.js"></script>
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+  integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="./js/navbar.js"></script>
 
-</html> 
 
+
+  
+
+
+ </script>
+
+</html>
