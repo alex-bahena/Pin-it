@@ -55,14 +55,11 @@
                     tabindex="-1">
                     <div class="py-1" role="none">
                       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-0">Shopping</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-1">Education</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Jobs</a>
-                      <a href="#" class="text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
-                        role="menuitem" tabindex="-1" id="menu-item-2">Developer</a>
+                        {{#each categories}}
+                      <a href= '/{{this.categories}}'
+                        class="categorie-list-{{@index}} text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1" id="dropdown-item-{{@index}}">{{this.categories}}</a>
+                      {{/each}}
                     </div>
                   </div>
                 </div>
