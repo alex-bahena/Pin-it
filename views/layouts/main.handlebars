@@ -39,7 +39,7 @@
                     <button type="button"
                       class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-200 focus:bg-gray-200"
                       id="menuButton" aria-expanded="true" aria-haspopup="true">
-                      Categories
+                      categories
                       <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -55,6 +55,8 @@
                     tabindex="-1">
                     <div class="py-1" role="none">
                       <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                      <a href="/"class='all-tiles text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
+                        role="menuitem" tabindex="-1"'>all tiles</a>
                         {{#each categories}}
                       <a href= '/{{this.categories}}'
                         class="categorie-list-{{@index}} text-gray-700 hover:text-black hover:font-extrabold block px-4 py-2 text-sm"
