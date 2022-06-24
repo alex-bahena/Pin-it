@@ -28,7 +28,7 @@ const pagesData = [
     {
         name: 'facebook',
         url: 'https://es-la.facebook.com/',
-        category_id: '1',
+        category_id: '2',
         img: 'https://icon-library.com/images/facebook-app-icon-transparent/facebook-app-icon-transparent-21.jpg',
     },
     {

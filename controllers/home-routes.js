@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
         const dbPageData = await Pages.findAll({
             include: [
                 {
-                
+
                     model: Category,
                     attributes: ['categories'],
                 },
@@ -86,8 +86,8 @@ router.get("/email", async (req, res) => {
         const dbPageData = await Pages.findAll({
             where: {
                 category_id: 1
-              }
-            
+            }
+
         });
         const dbCategoryData = await Category.findAll({
             include: [
@@ -128,7 +128,7 @@ router.get("/email", async (req, res) => {
         // }
 
 
-        
+
         // dataBase();
 
         //Categories map
@@ -161,8 +161,8 @@ router.get("/social%20media", async (req, res) => {
         const dbPageData = await Pages.findAll({
             where: {
                 category_id: 2
-              }
-            
+            }
+
         });
         const dbCategoryData = await Category.findAll({
             include: [
@@ -203,7 +203,7 @@ router.get("/social%20media", async (req, res) => {
         // }
 
 
-        
+
         // dataBase();
 
         //Categories map
@@ -236,8 +236,8 @@ router.get("/entertainment", async (req, res) => {
         const dbPageData = await Pages.findAll({
             where: {
                 category_id: 3
-              }
-            
+            }
+
         });
         const dbCategoryData = await Category.findAll({
             include: [
@@ -278,7 +278,7 @@ router.get("/entertainment", async (req, res) => {
         // }
 
 
-        
+
         // dataBase();
 
         //Categories map
@@ -311,8 +311,8 @@ router.get("/shopping", async (req, res) => {
         const dbPageData = await Pages.findAll({
             where: {
                 category_id: 4
-              }
-            
+            }
+
         });
         const dbCategoryData = await Category.findAll({
             include: [
@@ -353,7 +353,7 @@ router.get("/shopping", async (req, res) => {
         // }
 
 
-        
+
         // dataBase();
 
         //Categories map
@@ -386,8 +386,8 @@ router.get("/productivity", async (req, res) => {
         const dbPageData = await Pages.findAll({
             where: {
                 category_id: 5
-              }
-            
+            }
+
         });
         const dbCategoryData = await Category.findAll({
             include: [
@@ -428,7 +428,7 @@ router.get("/productivity", async (req, res) => {
         // }
 
 
-        
+
         // dataBase();
 
         //Categories map
@@ -455,5 +455,67 @@ router.get("/productivity", async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+
+router.post("/", async (req, res) => {
+
+    try {
+        const dbUserData = await Pages.create({
+            url: "https://" + req.body.url,
+            name: req.body.name,
+            img: req.body.img,
+            category_id: req.body.category_id
+            
+        });console.log(req.body)
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+      }
+      res.redirect('/');
+    
+    //console.log(req.body)
+    //console.log(req.body.url)
+    //res.redirect('/');
+    // const name = req.body.website-name
+})
+
+// router.get("/:id", async (req, res) => {
+// const id =  req.params.id
+// pages.findById(Id)
+// .then(pages => {
+//   res.render('page ', {
+//     // product: product,
+//     // pageTitle: product.title,
+//     // path: '/products'
+//   });
+// })
+// .catch(err => console.log(err));
+// })
+
+
+// router.delete("/:id", async (req, res) => {
+
+//     try {
+//         const dbUserData = await Pages.destroy({
+//             // url: "https://" + req.body.url,
+//             // name: req.body.name,
+//             // img: req.body.img,
+//             // category_id: req.body.category_id
+//             where:{
+//                 id:req.params.id
+//             }
+            
+//         });console.log(req.body)
+//     } catch (err) {
+//         console.log(err);
+//         res.status(500).json(err);
+//       }
+//       res.redirect('/');
+    
+//     //console.log(req.body)
+//     //console.log(req.body.url)
+//     //res.redirect('/');
+//     // const name = req.body.website-name
+// })
 
 module.exports = router;
