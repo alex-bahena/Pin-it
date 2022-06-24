@@ -29,7 +29,8 @@ These are the instructions to follow as a user:
 2. create a new account for Pin-it.
 3. Log-in your account 
 4. start adding your favorite online websites.
-5. This is how you can log out from Pin-it.
+5. divide your websites into categories
+6. This is how you can log out from Pin-it.
 
 # Frontend - code
 The app was built with help of the following technologies:
