@@ -81,4 +81,379 @@ router.get("/notes", (req, res) => {
     res.render("notes")
 })
 
+router.get("/email", async (req, res) => {
+    try {
+        const dbPageData = await Pages.findAll({
+            where: {
+                category_id: 1
+              }
+            
+        });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {
+
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         include: [
+        //             {
+
+        //                 model: Category,
+        //                 attributes: ['categories'],
+        //             },
+        //         ],
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         where: {
+        //             category_id: 1
+        //           }
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+
+        
+        // dataBase();
+
+        //Categories map
+        const categories = dbCategoryData.map((categories) =>
+            categories.get({ plain: true }));
+
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
+        );
+        console.log(categories);
+        console.log(pages)
+        res.render("email", {
+            pages,
+            categories,
+            pageTitle: 'Email',
+            loggedIn: req.session.loggedIn,
+            login: true,
+            hasPages: pages.length > 0,
+            testCSS: true
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get("/social%20media", async (req, res) => {
+    try {
+        const dbPageData = await Pages.findAll({
+            where: {
+                category_id: 2
+              }
+            
+        });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {
+
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         include: [
+        //             {
+
+        //                 model: Category,
+        //                 attributes: ['categories'],
+        //             },
+        //         ],
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         where: {
+        //             category_id: 1
+        //           }
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+
+        
+        // dataBase();
+
+        //Categories map
+        const categories = dbCategoryData.map((categories) =>
+            categories.get({ plain: true }));
+
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
+        );
+        console.log(categories);
+        console.log(pages)
+        res.render("social", {
+            pages,
+            categories,
+            pageTitle: 'Social Media',
+            loggedIn: req.session.loggedIn,
+            login: true,
+            hasPages: pages.length > 0,
+            testCSS: true
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get("/entertainment", async (req, res) => {
+    try {
+        const dbPageData = await Pages.findAll({
+            where: {
+                category_id: 3
+              }
+            
+        });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {
+
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         include: [
+        //             {
+
+        //                 model: Category,
+        //                 attributes: ['categories'],
+        //             },
+        //         ],
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         where: {
+        //             category_id: 1
+        //           }
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+
+        
+        // dataBase();
+
+        //Categories map
+        const categories = dbCategoryData.map((categories) =>
+            categories.get({ plain: true }));
+
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
+        );
+        console.log(categories);
+        console.log(pages)
+        res.render("entertainment", {
+            pages,
+            categories,
+            pageTitle: 'Entertainment',
+            loggedIn: req.session.loggedIn,
+            login: true,
+            hasPages: pages.length > 0,
+            testCSS: true
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get("/shopping", async (req, res) => {
+    try {
+        const dbPageData = await Pages.findAll({
+            where: {
+                category_id: 4
+              }
+            
+        });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {
+
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         include: [
+        //             {
+
+        //                 model: Category,
+        //                 attributes: ['categories'],
+        //             },
+        //         ],
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         where: {
+        //             category_id: 1
+        //           }
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+
+        
+        // dataBase();
+
+        //Categories map
+        const categories = dbCategoryData.map((categories) =>
+            categories.get({ plain: true }));
+
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
+        );
+        console.log(categories);
+        console.log(pages)
+        res.render("shopping", {
+            pages,
+            categories,
+            pageTitle: 'Shopping',
+            loggedIn: req.session.loggedIn,
+            login: true,
+            hasPages: pages.length > 0,
+            testCSS: true
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get("/productivity", async (req, res) => {
+    try {
+        const dbPageData = await Pages.findAll({
+            where: {
+                category_id: 5
+              }
+            
+        });
+        const dbCategoryData = await Category.findAll({
+            include: [
+                {
+
+                    model: Pages,
+                    attributes: ['name'],
+                },
+            ],
+        });
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         include: [
+        //             {
+
+        //                 model: Category,
+        //                 attributes: ['categories'],
+        //             },
+        //         ],
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+        // const dataBase = async () => {
+        //     const dbPageData = await Pages.findAll({
+        //         where: {
+        //             category_id: 1
+        //           }
+        //     });
+        //     const pages = dbPageData.map((pages) =>
+        //         pages.get({ plain: true })
+        //     );
+        //     console.log(JSON.stringify(pages));
+        // }
+
+
+        
+        // dataBase();
+
+        //Categories map
+        const categories = dbCategoryData.map((categories) =>
+            categories.get({ plain: true }));
+
+        const pages = dbPageData.map((pages) =>
+            pages.get({ plain: true })
+        );
+        console.log(categories);
+        console.log(pages)
+        res.render("productivity", {
+            pages,
+            categories,
+            pageTitle: 'productivity',
+            loggedIn: req.session.loggedIn,
+            login: true,
+            hasPages: pages.length > 0,
+            testCSS: true
+        });
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;

@@ -14,6 +14,7 @@
         </button>
       </div>
       {{#each pages}}
+        
       <div class="item" data-id = {{inc @index}} > 
       {{!-- <a href="{{this.url}}"  id="div2" onclick="Geek1(event)" target="_blank"> --}}
           
@@ -38,6 +39,7 @@
             ></a>
           </div>
           <h5 class="text-zinc-700 text-xl mb-2">{{this.name}}</h5>
+          <h5> {{category_id}} </h5>
           {{!-- <button onclick=href='www.google.com.mx'>{{this.name}}</button> --}}
           {{!-- <p class="text-gray-700 text-base mb-4">
             
