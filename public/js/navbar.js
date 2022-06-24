@@ -84,11 +84,7 @@ const deleteNoteModal = document.getElementById("deleteNoteModal")
 const deleteNoteModalBtn = document.getElementById("deleteNoteModalBtn")
 const cancelDeleteNoteModalBtn = document.getElementById("cancelDeleteNoteModalBtn")
 const deleteNoteBtn = document.getElementById("deleteNoteBtn")
-// tilesDropdownBtn.onclick = function () {
-//   tilesOptions.classList.toggle("hidden")
-//   tilesOptions.classList.toggle("block")
-// }
-tilesDropdownBtn.onmouseenter = function () {
+tilesDropdownBtn.onclick = function () {
   tilesOptions.classList.toggle("hidden")
   tilesOptions.classList.toggle("block")
 }
@@ -106,15 +102,15 @@ showNotesBtn.onclick = function () {
 createNewTileBtn.onclick = function () {
   createTileModal.style.display = "flex"
 }
-// // // cancelNewTileBtn.onclick = function () {
-// // //   createTileModal.style.display = "none";
-// // // }
+cancelNewTileBtn.onclick = function () {
+  createTileModal.style.display = "none";
+}
 deleteTileModalBtn.onclick = function () {
   deleteTileModal.style.display = "flex"
 }
-// // // cancelDeleteTileModalBtn.onclick = function () {
-// // //   deleteTileModal.style.display = "none";
-// // // }
+cancelDeleteTileModalBtn.onclick = function () {
+  deleteTileModal.style.display = "none";
+}
 // // // createNoteBtn.onclick = function () {
 // // //   createNoteModal.style.display = "flex"
 // // // }
