@@ -55,3 +55,26 @@ body {
   border-radius: 0 0 5px 5px;
   z-index: 40;
 }
+
+img{
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .grid {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .grid {
+    margin-left: 0%;
+  }
+}

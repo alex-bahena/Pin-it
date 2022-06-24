@@ -4,13 +4,13 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const hbs = exphbs.create({});
+// const hbs = exphbs.create({});
 const morgan = require("morgan")
 const Database = require('./dbpull');
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
-//const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers');
 Database.pagesName();
 Database.pagesArray();
 const app = express();
@@ -28,7 +28,7 @@ const sess = {
 
 app.use(session(sess));
 
-// const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
@@ -46,7 +46,9 @@ const homeRoutes = require ("./controllers/home-routes.js")
 app.use("/", homeRoutes)
 
 app.use(routes);
-
+//handle 404
+const errorController = require('./controllers/error');
+app.use(errorController.get404);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
