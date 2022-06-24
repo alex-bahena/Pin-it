@@ -491,7 +491,10 @@ router.post("/", async (req, res) => {
 // })
 // .catch(err => console.log(err));
 // })
-
+document.addEventListener('click', e =>{
+    const domValue = e.target.innerHTML;
+    console.log(domValue);
+})
 
 // router.delete("/:id", async (req, res) => {
 
