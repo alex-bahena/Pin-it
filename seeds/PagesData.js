@@ -5,7 +5,7 @@ const pagesData = [
         name: 'amazon',
         url: 'https://amazon.com.mx/',
         category_id: '1',
-        img: 'https://icon-library.com/images/amazon-icon-png/amazon-icon-png-16.jpg',
+        img: 'https://epinium.com/wp-content/uploads/2018/10/amazon-logo.png',
     },
     {
         name: 'gmail',
@@ -41,7 +41,7 @@ const pagesData = [
         name: 'mercado-libre',
         url: 'https://www.mercadolibre.com.mx/',
         category_id: '3',
-        img: 'https://s3.amazonaws.com/cdn.wp.m4ecmx/wp-content/uploads/2020/03/18140935/nueva-portada-enero.jpg',
+        img: 'https://http2.mlstatic.com/D_NQ_NP932034-MLA41139200997_032020-F.jpg',
     },
     {
         name: 'google-translate',
@@ -65,7 +65,7 @@ const pagesData = [
         name: 'github',
         url: 'https://icon-library.com/images/github-icon-png/github-icon-png-5.jpg',
         category_id: '2',
-        img: 'https://icon-library.com/images/icon-github/icon-github-28.jpg',
+        img: 'https://www.svgrepo.com/show/303615/github-icon-1-logo.svg',
     },
     {
         name: 'udemy',
