@@ -55,7 +55,7 @@ The app was built with help of the following technologies:
 
 # Pin-it Deployed.
 This is how Pin-it looks like from the landing page.
-
+![Pin-it](imgs/landing%20page.png)
 We can see how to log in with your account.
 
 Adding a new card to your website.
