@@ -29,12 +29,13 @@ Then a new card it´s added in the page.
 # Getting Started
 These are the instructions to follow as a user:
 
-1. go to the following URL: https://pin-it-app-project.herokuapp.com/
-2. create a new account for Pin-it.
-3. Log-in your account 
-4. start adding your favorite online websites.
-5. divide your websites into categories
-6. This is how you can log out from Pin-it.
+1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
+2. Create a new account for Pin-it by clicking at the top-right icon and then another click in log-in button.
+3. Log-in your account. 
+4. Start adding your favorite online websites by clicking in new tilte.
+5. Add a new website and assign the appropriate category.
+6. Filter the websites added by categorie.
+7. Click in log out button inside the top-right icon to log out from Pin-it.
 
 # Frontend - code
 The app was built with help of the following technologies:
