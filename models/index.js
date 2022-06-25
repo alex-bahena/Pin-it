@@ -1,6 +1,6 @@
 const Pages = require('./Pages');
 const Category = require('./Category');
-const User = require('./User');
+const User = require('./user');
 // const Profile = require('./Profile');
 
 

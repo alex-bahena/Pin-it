@@ -6,7 +6,7 @@
       <div class="item" data-id = "1">
         <button type="button" id="createNewTileBtn" data-bs-toggle="modal" data-bs-target="#createTileModal" data-mdb-ripple="true" data-mdb-ripple-color="light">
           <div class="transition hover:duration-300 p-3 rounded-lg shadow-lg bg-white flex flex-col justify-center items-center hover:bg-gray-200">
-            <h5 class="text-base font-extrabold unselectable">New Tile</h5>
+            <h5 class="text-black text-xl leading-tight font-medium mb-2">New Tile</h5>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -14,7 +14,8 @@
         </button>
       </div>
       {{#each pages}}
-      <div id="{{this.id}} "class="item" data-id = {{inc @index}} > 
+        
+      <div class="item" data-id = {{inc @index}} > 
       {{!-- <a href="{{this.url}}"  id="div2" onclick="Geek1(event)" target="_blank"> --}}
           
 
@@ -27,22 +28,18 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
               </svg>
             </button>
-
-                <!--delete button-->
-                {{!-- <a href=""    target="_blank">   --}}
-            <button class='deleteButton-{{@index}}'id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
+            <button id="deleteTileModalBtn" data-bs-toggle="modal" data-bs-target="#deleteTileModal">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition hover:duration-300 text-red-400 hover:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
               </svg>
-                </a>
-
             </button>
           </div>
           <div class="flex justify-center">
-            <a href="{{this.url}}"  id="div2" onclick="Geek1(event)" target="_blank"><img style='border-radius: 45px;'src="{{this.img}}" alt="{{this.name}}"
+            <a href="{{this.url}}"  id="div2" onclick="Geek1(event)" target="_blank"><img style='border-radius: 45px;' src="{{this.img}}" alt="{{this.name}}"
             ></a>
           </div>
           <h5 class="text-base font-extrabold unselectable">{{this.name}}</h5>
+          
           {{!-- <button onclick=href='www.google.com.mx'>{{this.name}}</button> --}}
           {{!-- <p class="text-gray-700 text-base mb-4">
             
@@ -64,7 +61,7 @@
       <div class="modal-container flex justify-center mt-10 sm:mt-0">
         <div class="md:grid">
           <div class="mt-5 md:mt-0 md:col-span-2">
-            <form action="/" method="POST">
+            <form action="#" method="POST">
               <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6 rounded-t-xl">
                   <div class="grid grid-cols-6 gap-6">
@@ -75,39 +72,33 @@
                       <h2>New Tile</h2>
                     </div>
                     <div class="col-span-6">
-                      <label for="url" class="block text-sm font-medium text-slate-800">Website Link</label>
-                      <input type="text" name="url" id="url" autocomplete="url" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="https://www.webpage.com">
+                      <label for="website-name" class="block text-sm font-medium text-slate-800">Website Link</label>
+                      <input type="text" name="website-name" id="website-name" autocomplete="website-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="https://www.webpage.com">
                     </div>
 
                     <div class="col-span-6 sm:col-span-3">
-                      <label for="name" class="block text-sm font-medium text-slate-800">Page Name</label>
-                      <input type="text" name="name" id="name" autocomplete="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="user@mail.com">
+                      <label for="username-name" class="block text-sm font-medium text-slate-800">Username/Email</label>
+                      <input type="text" name="username-name" id="username-name" autocomplete="username-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="user@mail.com">
                     </div>
 
                     <div class=" col-span-6 sm:col-span-3">
-                      <label for="password-name" class="block text-sm font-medium text-slate-800">Image</label>
-                      <input type="text" name="img" id="img" autocomplete="img" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="*********">
+                      <label for="password-name" class="block text-sm font-medium text-slate-800">Password</label>
+                      <input type="text" name="password-name" id="password-name" autocomplete="password-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="*********">
                     </div>
 
                     <div class="col-span-6 sm:col-span-3">
-                      <label for="category_id" class="block text-sm font-medium text-slate-800">Category</label>
-                      <select  name="category_id" id="category_id"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" >
-                        <option value="1">Email</option>
-                        <option value="2">Social Media</option>
-                        <option value="3">Entertainment</option>
-                        <option value="4">Shopping</option>
-                        <option value="5">Productivity</option>
-                        </select>
+                      <label for="category-name" class="block text-sm font-medium text-slate-800">Category</label>
+                      <input type="text" name="category-name" id="category-name" autocomplete="category-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="Music">
                     </div>
 
-                    {{!-- <div class="col-span-6 sm:col-span-3">
+                    <div class="col-span-6 sm:col-span-3">
                       <label for="note-name" class="block text-sm font-medium text-slate-800" href="api/notes">Note (optional)</label>
                       <input type="text" name="note-name" id="note-name" autocomplete="note-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-0 bg-gray-200 rounded-md" placeholder="Note text">
-                    </div> --}}
+                    </div>
                   </div>
                 </div>
                 <div class="flex flex-shrink-0 flex-wrap items-center justify-center rounded-b-xl px-4 py-3 bg-gray-200 text-right sm:px-6">
-                  <button type="submit" id="saveTileBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-teal-700 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
+                  <button type="button" id="saveTileBtn" class="inline-block mx-2 px-6 py-2.5 bg-teal-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-teal-700 active:shadow-lg transition duration-150 ease-in-out" data-bs-dismiss="modal">
                     Save
                   </button>
                   <button type="button" class="inline-block mx-2 px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-red-600 transition duration-150 ease-in-out" id="cancelNewTileBtn" data-bs-dismiss="modal">
