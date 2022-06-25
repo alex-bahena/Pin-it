@@ -174,3 +174,9 @@ function loadLayout(grid, serializedLayout) {
   }
   grid.sort(newItems, {layout: 'instant'});
 }
+
+
+document.addEventListener('click', e =>{
+  const domValue = e.target.innerHTML;
+  console.log(domValue);
+});
