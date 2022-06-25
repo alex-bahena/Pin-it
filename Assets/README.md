@@ -6,9 +6,9 @@ Pin-it | Application designed to organize all the applications you use every day
 The purpose of this app is to improve the management and order of our applications, saving all our online websites in one site and divide them into categories, avoiding wastig time looking for them one by one and improving our experience within the browsers.
 
 # MVP
-
+```md
 As a user I want to be able to store the applications I usually use in a daily basis, so I can organize and get into my apps faster.
-
+```
 This app should cover all the following criteria:
 
 When I get into my app.
