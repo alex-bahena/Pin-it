@@ -1,3 +1,4 @@
+### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Pin-it
 Pin-it | Application designed to organize all the applications you use every day, having everything within your main internet access.
 
@@ -91,7 +92,7 @@ The app was built with help of the following technologies:
 # Futures Implementations
 
 * Implement the Google API to log in with a google account such a gmail.
-* Make it possible to remove cards from no longer needed by clicking in delete button or icon in color red (as below). 
+* Make it possible to remove cards no longer needed by user on clicking in delete button. 
   
   ![delete-button](./imgs/delete-button.png)
 
