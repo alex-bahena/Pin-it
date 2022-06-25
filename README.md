@@ -3,7 +3,7 @@ Project Description
 Pin-it | Application designed to organize all the applications you use every day, having everything within your main internet access.
 
 # Purpose
-The purpose of this app is to improve the management and order of our applications, saving all our online websites in one site and divided into categories, avoiding wastig time looking for them one by one and improving our experience within the browsers.
+The purpose of this app is to improve the management and order of our applications, saving all our online websites in one site and divide them into categories, avoiding wastig time looking for them one by one and improving our experience within the browsers.
 
 # MVP
 
@@ -14,13 +14,15 @@ This app should cover all the following criteria:
 When I get into my app.
 Then I am presented with a nav bar.
 When I look into the nav bar.
-Then I am presented with a search input, categories options and log-in button.
-When I click in log-in button.
-Then I am presented in a new page, where I can submit my account info.
+Then I am presented with a search input, categories options and icons.
+When I click in the top-right icon.
+Then a log-in button is displayed.
+When I click on log-in button.
+Then I am presented in a new page, where I can create and submit my username account.
 When I log-in my account.
 Then I get in and a log out-button appears at the top-right of the page.
-When I click in a new card.
-Then a new card is created with empty fields to add a new app and my profile account.
+When I click in a new title.
+Then a modal car appears waiting for user to submit the website link and categorie.
 
 # Getting Started
 These are the instructions to follow as a user:
