@@ -72,7 +72,7 @@ Then a new card it´s added to the page.
 
 ![click-in-card](./imgs/instagram.png)
 
-### 7.2 Instagram website will be open in a new tab within your browser.
+#### 7.2 Instagram website will be open in a new tab within your browser.
 
 ![insta-deployed](./imgs/instagram%20deployed.png)
 
