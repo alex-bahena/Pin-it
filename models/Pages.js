@@ -37,6 +37,10 @@ Pages.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'pages',
+        timestamps: false,
+        createdAt: false,
+        updatedAt: false,
+
     }
 );
 

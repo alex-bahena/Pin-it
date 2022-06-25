@@ -21,6 +21,9 @@ Category.init(
         freezeTableName: true,
         underscored: true,
         modelName: 'category',
+        timestamps: false,
+        createdAt: false,
+        updatedAt: false,
 
     }
 );
