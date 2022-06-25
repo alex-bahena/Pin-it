@@ -61,16 +61,18 @@ The app was built with help of the following technologies:
 
 ![log-in](imgs/log-in.png)
 
-### You can create a new account in card below.
+### You can create a new account in card below within log-in page.
 
 ![create-new-Username](./imgs/create%20new%20username.png)
 
-### You can submit your username in card below.
+### You can submit your username in card below within log-in page.
 ![Log-in-username](imgs/log-in%20username.png)
 
 # Futures Implementations
 
-Implement the Google API to log in with a google account such a gmail.
+* Implement the Google API to log in with a google account such a gmail.
+* Make delete button works
+  ![delete-button](./imgs/delete-button.png)
 
 # Backend - code
 This section describes the main FE features and how they work...
