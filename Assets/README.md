@@ -41,7 +41,7 @@ These are the instructions to follow as a user:
   
 ![Create-new-account](./imgs/create-your-account.png)
  
-5. Start adding your favorite online websites by clicking in new tilte.
+5. Start adding your favorite online websites by clicking in new tile.
    
 ![add-new-card](./imgs/new%20title.png)
    
@@ -91,7 +91,7 @@ The app was built with help of the following technologies:
 # Futures Implementations
 
 * Implement the Google API to log in with a google account such a gmail.
-* Make delete button works. 
+* Make it possible to remove cards from no longer needed by clicking in delete button or icon in color red (as below). 
   
   ![delete-button](./imgs/delete-button.png)
 
