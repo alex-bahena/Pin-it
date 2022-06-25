@@ -53,16 +53,19 @@ The app was built with help of the following technologies:
 * ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
 # Pin-it Deployed.
-This is how Pin-it looks like from the landing page.
+### This is how Pin-it looks like from the landing page.
+
 ![Pin-it](imgs/landing%20page.png)
 
-Here is how the log-in page looks like.
+### Here is how the log-in page looks like.
+
 ![log-in](imgs/log-in.png)
 
-You can create a new account in card below.
-!!![create-new-Username](./imgs/create%20new%20username.png)
+### You can create a new account in card below.
 
-You can submit your username in card below.
+![create-new-Username](./imgs/create%20new%20username.png)
+
+### You can submit your username in card below.
 ![Log-in-username](imgs/log-in%20username.png)
 
 # Futures Implementations
