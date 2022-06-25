@@ -18,16 +18,18 @@ Then I am presented with a search input, categories options and icons.
 When I click in the top-right icon.
 Then a log-in button is displayed.
 When I click on log-in button.
-Then I am presented in a new page, where I can create and submit my username account.
-When I log-in my account.
-Then I get in and a log out-button appears at the top-right of the page.
+Then I am presented in a new page, where I can create a new account or submit an account already created.
+When I log-in an account.
+Then I get in and a log out-button appears by clicking at the top-right icon of the page.
 When I click in a new title.
-Then a modal car appears waiting for user to submit the website link and categorie.
+Then a modal car appears waiting for user to submit info required, such as website link, username, password and category.
+When I click save in the modal card.
+Then a new card it´s added in the page.
 
 # Getting Started
 These are the instructions to follow as a user:
 
-1. go to the following URL: 
+1. go to the following URL: https://pin-it-app-project.herokuapp.com/
 2. create a new account for Pin-it.
 3. Log-in your account 
 4. start adding your favorite online websites.
