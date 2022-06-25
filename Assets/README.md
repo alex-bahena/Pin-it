@@ -96,5 +96,5 @@ A database is a collection of data stored electronically. The database managemen
 Sequelize is a module that enables JS developers to work with relatuina data more easily. 
 # Heroku
 
-=================================================================================
+https://pin-it-app-project.herokuapp.com/
 
