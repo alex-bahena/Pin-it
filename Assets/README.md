@@ -29,14 +29,33 @@ Then a new card it´s added to the page.
 These are the instructions to follow as a user:
 
 1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
-2. Create a new account for Pin-it by clicking at the top-right icon and then another click in log-in button.
-3. If you have an account created please submit it as below.
-4. IF you don´t have an account, please create one as below.
-5. Log-in your account. 
-6. Start adding your favorite online websites by clicking in new tilte.
-7. Add a new website and assign the appropriate category.
-8. Filter the websites added by categorie.
-9. Click in log out button inside the top-right icon to log out from Pin-it.
+2. Create a new account for Pin-it by clicking at the top icon and then another click in log-in button.
+
+![log-in-button](./imgs/log-in-button.png)
+
+3. If you have an account created already, please submit your email and password and then click in Log-In button.
+   
+![log-in-account](./imgs/Log-in-card.png)
+
+4. IF you don´t have an account, please create one account filling empty fields below with a username, Email address and Password to finally click in Sign-Up button to log in.
+  
+![Create-new-account](./imgs/create-your-account.png)
+ 
+5. Start adding your favorite online websites by clicking in new tilte.
+   
+![add-new-card](./imgs/new%20title.png)
+   
+6. Once step 5 it´s completed, add a new website filling empty fields below (Webisite Link, Page Name, Image and Category) and the click in 'Save' button to add it and 'Cancel' to get back.
+
+![new-card-modal](./imgs/adding-new-card.png)
+
+7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within Pin-it.
+
+![Categories](./imgs/categories.png)
+   
+8.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
+   
+![log-out](./imgs/log-out-button.png)
 
 # Frontend - code
 
@@ -51,6 +70,7 @@ The app was built with help of the following technologies:
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 * ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 * ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+* Handlebars
 
 # Pin-it Deployed.
 ### This is how Pin-it looks like from the landing page.
@@ -63,17 +83,62 @@ The app was built with help of the following technologies:
 
 ### You can create a new account in card below within log-in page.
 
-![create-new-Username]
+![create-new-account](./imgs/create-your-account.png)
 
 ### You can submit your username in card below within log-in page.
-![Log-in-username]
+![Log-in-username](./imgs/Log-in-card.png)
 
 # Futures Implementations
 
 * Implement the Google API to log in with a google account such a gmail.
-* Make delete button works
+* Make delete button works. 
   
   ![delete-button](./imgs/delete-button.png)
+
+* Make search section in the nav bar look into an specific card.
+  
+  ![search-input](imgs/search-input.png)
+
+* Make it possible to add notes, as well as shopping lists, to-dos and appointments.
+  
+  ![notes](./imgs/notas.png)
+
+
+# License
+
+### MIT License (https://opensource.org/licenses/MIT)
+
+      MIT License Copyright (c) [year] [fullname]
+      
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+      
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+      
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+
+# Contribution
+
+* Adrian Strozzi
+* Alejandro Bahena
+* Diego Jimenez
+* Erendira Mendoza
+* Javier Fernandez
+* Javier Resines
+* Jorge Cardenas
+* Mario Acosta
+* Pablo Garcia
 
 # Backend - code
 This section describes the main FE features and how they work...
