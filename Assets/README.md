@@ -24,18 +24,20 @@ Then I get in and a log out-button appears by clicking at the top-right icon of 
 When I click in a new title.
 Then a modal card appears waiting for user to submit info required, such as website link, page name, image and category.
 When I click save in the modal card.
-Then a new card it´s added in the page.
+Then a new card it´s added to the page.
 ```
 # Getting Started
 These are the instructions to follow as a user:
 
 1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
 2. Create a new account for Pin-it by clicking at the top-right icon and then another click in log-in button.
-3. Log-in your account. 
-4. Start adding your favorite online websites by clicking in new tilte.
-5. Add a new website and assign the appropriate category.
-6. Filter the websites added by categorie.
-7. Click in log out button inside the top-right icon to log out from Pin-it.
+3. If you have an account created please submit it as below.
+4. IF you don´t have an account, please create one as below.
+5. Log-in your account. 
+6. Start adding your favorite online websites by clicking in new tilte.
+7. Add a new website and assign the appropriate category.
+8. Filter the websites added by categorie.
+9. Click in log out button inside the top-right icon to log out from Pin-it.
 
 # Frontend - code
 
