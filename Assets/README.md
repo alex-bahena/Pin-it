@@ -49,7 +49,7 @@ These are the instructions to follow as a user:
 
 ![new-card-modal](./imgs/adding-new-card.png)
 
-7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within Pin-it.
+7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
 
 ![Categories](./imgs/categories.png)
    
