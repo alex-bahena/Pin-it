@@ -25,6 +25,13 @@ When I click in a new title.
 Then a modal card appears waiting for user to submit info required, such as website link, page name, image and category.
 When I click save in the modal card.
 Then a new card it´s added to the page.
+When I click in a card
+Then the website stored in that specific card it´s open in a new tab within the browser.
+When I click in categorie button in nav bar
+Then categories are shown down.
+When I click in Log Out button
+Then I get Log out from my account.
+
 ```
 # Pin-it Deployed.
 ### This is how Pin-it looks like from the landing page.
