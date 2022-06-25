@@ -14,4 +14,4 @@ Pages.belongsTo(Category, {
 
 });
 
-module.exports = { Pages, Category, User};
+module.exports = { Category, Pages, User };

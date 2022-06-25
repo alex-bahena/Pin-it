@@ -8,8 +8,11 @@ const seedAll = async () => {
   //sequilize to delete the data in our database.
   await sequelize.sync({force: false});
   //The order of ejecution is extremly important due the ForeingKeys
-  await seedCategories();
   await seedPages();
+  await seedCategories();
+
+
+
 
   process.exit(0);
 };
