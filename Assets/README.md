@@ -26,6 +26,22 @@ Then a modal card appears waiting for user to submit info required, such as webs
 When I click save in the modal card.
 Then a new card it´s added to the page.
 ```
+# Pin-it Deployed.
+### This is how Pin-it looks like from the landing page.
+
+![Pin-it](imgs/landing%20page.png)
+
+### Here is how the log-in page looks like.
+
+![log-in](imgs/log-in.png)
+
+### You can create a new account in card below within log-in page.
+
+![create-new-account](./imgs/create-your-account.png)
+
+### You can submit your username in card below within log-in page.
+![Log-in-username](./imgs/Log-in-card.png)
+
 # Getting Started
 ### These are the instructions to follow as a user:
 
@@ -42,7 +58,7 @@ Then a new card it´s added to the page.
   
 ![Create-new-account](./imgs/create-your-account.png)
  
-### 5. Start adding your favorite online websites by clicking in new tile.
+### 5. Start adding your favorite online websites by clicking in new tile as below.
    
 ![add-new-card](./imgs/new%20title.png)
    
@@ -50,11 +66,21 @@ Then a new card it´s added to the page.
 
 ![new-card-modal](./imgs/adding-new-card.png)
 
-### 7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
+### 7. Click inside in one of the cards deployed and it will refer you to the website stored within the card. For Example:
+
+#### 7.1 Click in Instagram card and then...
+
+![click-in-card](./imgs/instagram.png)
+
+### 7.2 Instagram website will be open in a new tab within your browser.
+
+![insta-deployed](./imgs/instagram%20deployed.png)
+
+### 8. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
 
 ![Categories](./imgs/categories.png)
    
-### 8.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
+### 9.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
    
 ![log-out](./imgs/log-out-button.png)
 
@@ -73,22 +99,6 @@ The app was built with help of the following technologies:
 * ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 * Handlebars
 
-# Pin-it Deployed.
-### This is how Pin-it looks like from the landing page.
-
-![Pin-it](imgs/landing%20page.png)
-
-### Here is how the log-in page looks like.
-
-![log-in](imgs/log-in.png)
-
-### You can create a new account in card below within log-in page.
-
-![create-new-account](./imgs/create-your-account.png)
-
-### You can submit your username in card below within log-in page.
-![Log-in-username](./imgs/Log-in-card.png)
-
 # Futures Implementations
 
 * Implement the Google API to log in with a google account such a gmail.
@@ -96,7 +106,7 @@ The app was built with help of the following technologies:
   
   ![delete-button](./imgs/delete-button.png)
 
-* Make search section in the nav bar look into an specific card.
+* Make search section in the nav bar look into an specific card .
   
   ![search-input](imgs/search-input.png)
 
