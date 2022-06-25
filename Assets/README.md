@@ -60,7 +60,7 @@ Here is how the log-in page looks like.
 ![log-in](imgs/log-in.png)
 
 You can create a new account in card below.
-![create-new-Username](./imgs/create%20new%20username.png)
+!!![create-new-Username](./imgs/create%20new%20username.png)
 
 You can submit your username in card below.
 ![Log-in-username](imgs/log-in%20username.png)
