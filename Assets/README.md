@@ -22,7 +22,7 @@ Then I am presented in a new page, where I can create a new account or submit an
 When I log-in an account.
 Then I get in and a log out-button appears by clicking at the top-right icon of the page.
 When I click in a new title.
-Then a modal car appears waiting for user to submit info required, such as website link, username, password and category.
+Then a modal card appears waiting for user to submit info required, such as website link, username, password and category.
 When I click save in the modal card.
 Then a new card it´s added in the page.
 ```
