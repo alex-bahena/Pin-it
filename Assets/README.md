@@ -29,32 +29,32 @@ Then a new card it´s added to the page.
 # Getting Started
 These are the instructions to follow as a user:
 
-1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
-2. Create a new account for Pin-it by clicking at the top icon and then another click in log-in button.
+### 1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
+### 2. Create a new account for Pin-it by clicking at the top icon and then another click in log-in button.
 
 ![log-in-button](./imgs/log-in-button.png)
 
-3. If you have an account created already, please submit your email and password and then click in Log-In button.
+### 3. If you have an account created already, please submit your email and password and then click in Log-In button.
    
 ![log-in-account](./imgs/Log-in-card.png)
 
-4. IF you don´t have an account, please create one account filling empty fields below with a username, Email address and Password to finally click in Sign-Up button to log in.
+### 4. IF you don´t have an account, please create one account filling empty fields below with a username, Email address and Password to finally click in Sign-Up button to log in.
   
 ![Create-new-account](./imgs/create-your-account.png)
  
-5. Start adding your favorite online websites by clicking in new tile.
+### 5. Start adding your favorite online websites by clicking in new tile.
    
 ![add-new-card](./imgs/new%20title.png)
    
-6. Once step 5 it´s completed, add a new website filling empty fields below (Webisite Link, Page Name, Image and Category) and the click in 'Save' button to add it and 'Cancel' to get back.
+### 6. Once step 5 it´s completed, add a new website filling empty fields below (Webisite Link, Page Name, Image and Category) and the click in 'Save' button to add it and 'Cancel' to get back.
 
 ![new-card-modal](./imgs/adding-new-card.png)
 
-7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
+### 7. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
 
 ![Categories](./imgs/categories.png)
    
-8.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
+### 8.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
    
 ![log-out](./imgs/log-out-button.png)
 
