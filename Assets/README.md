@@ -10,7 +10,7 @@ The purpose of this app is to improve the management and order of our applicatio
 As a user I want to be able to store the applications I usually use in a daily basis, so I can organize and get into my apps faster.
 ```
 This app should cover all the following criteria:
-
+```md
 When I get into my app.
 Then I am presented with a nav bar.
 When I look into the nav bar.
@@ -25,7 +25,7 @@ When I click in a new title.
 Then a modal car appears waiting for user to submit info required, such as website link, username, password and category.
 When I click save in the modal card.
 Then a new card it´s added in the page.
-
+```
 # Getting Started
 These are the instructions to follow as a user:
 
