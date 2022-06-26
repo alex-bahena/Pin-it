@@ -53,13 +53,7 @@ THEN I get Log out from my account.
 ### Here is how the log-in page looks like.
 
 ![log-in](imgs/log-in.png)
-
-### You can create a new account in card below within log-in page.
-
-![create-new-account](./imgs/create-your-account.png)
-
-### You can submit your username in card below within log-in page.
-![Log-in-username](./imgs/Log-in-card.png)
+![log-in2](./imgs/log%20in%20page%20complete.png)
 
 # Manual-User
 ### These are the instructions to follow as a user:
