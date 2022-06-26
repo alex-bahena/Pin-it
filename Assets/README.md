@@ -20,7 +20,7 @@ Then a log-in button is displayed.
 When I click on log-in button.
 Then I am presented in a new page, where I can create a new account or submit an account already created.
 When I log-in an account.
-Then I get in and a log out-button appears by clicking at the top-right icon of the page.
+Then I get in and a Log-out button appears by clicking at the top-right icon of the page.
 When I click in a new title.
 Then a modal card appears waiting for user to submit info required, such as website link, page name, image and category.
 When I click save in the modal card.
@@ -28,8 +28,8 @@ Then a new card it´s added to the page.
 When I click in a card
 Then the website stored in that specific card it´s open in a new tab within the browser.
 When I click in categorie button in nav bar
-Then categories are shown down.
-When I click in Log Out button
+Then all categories are shown down.
+When I click in Log Out button which it´s inside of the top-right icon
 Then I get Log out from my account.
 
 ```
