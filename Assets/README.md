@@ -34,7 +34,7 @@ Then I get Log out from my account.
 
 ```
 # Pin-it Deployed.
-### This is how Pin-it looks like from the landing page.
+### * This is how Pin-it looks like from the landing page.
 
 ![Pin-it](imgs/landing%20page.png)
 
