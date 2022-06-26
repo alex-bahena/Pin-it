@@ -5,6 +5,15 @@ Pin-it | Application designed to organize all the applications you use every day
 # Purpose
 The purpose of this app is to improve the management and order of our applications, saving all our online websites in one site and divide them into categories, avoiding wastig time looking for them one by one and improving our experience within the browsers.
 
+# Table of Contents
+
+  - [MVP](#MVP)
+  - [Pin-it-Deployed](#Pin-it_Deployed)
+  - [License](#License)
+  - [Contribution](#contribution)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
 # MVP
 ```md
 As a user I want to be able to store the applications I usually use in a daily basis, 
@@ -34,7 +43,7 @@ WHEN I click in Log Out button which it´s inside of the top-right icon
 THEN I get Log out from my account.
 
 ```
-# Pin-it Deployed.
+# Pin-it Deployed
 ### This is how Pin-it looks like from the landing page.
 
 ![Pin-it](imgs/landing%20page.png)
