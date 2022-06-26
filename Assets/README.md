@@ -8,11 +8,16 @@ The purpose of this app is to improve the management and order of our applicatio
 # Table of Contents
 
   - [MVP](#MVP)
-  - [Pin-it-Deployed](#Pin-it_Deployed)
+  - [Pin-it-Deployed](#Pin-it-Deployed)
+  - [Manual-user](#Manual-user)
+  - [Frontend-code](#frontend-code)
+  - [Futures-Implementations](#Futures-Implementations)
   - [License](#License)
   - [Contribution](#contribution)
-  - [Tests](#tests)
-  - [Questions](#questions)
+  - [Backend-code](#Backend-code)
+  - [Node.js](#Node.js)
+  - [server.js](#server.js)
+  - [Package.json](#Package.json)
 
 # MVP
 ```md
@@ -43,7 +48,7 @@ WHEN I click in Log Out button which it´s inside of the top-right icon
 THEN I get Log out from my account.
 
 ```
-# Pin-it Deployed
+# Pin-it-Deployed
 ### This is how Pin-it looks like from the landing page.
 
 ![Pin-it](imgs/landing%20page.png)
@@ -59,7 +64,7 @@ THEN I get Log out from my account.
 ### You can submit your username in card below within log-in page.
 ![Log-in-username](./imgs/Log-in-card.png)
 
-# Getting Started
+# Manual-User
 ### These are the instructions to follow as a user:
 
 ### 1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
@@ -101,7 +106,7 @@ THEN I get Log out from my account.
    
 ![log-out](./imgs/log-out-button.png)
 
-# Frontend - code
+# Frontend-code
 
 The app was built with help of the following technologies:
 
@@ -116,7 +121,7 @@ The app was built with help of the following technologies:
 * ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 * Handlebars
 
-# Futures Implementations
+# Futures-Implementations
 
 * Implement the Google API to log in with a google account such a gmail.
 * Make it possible to remove cards no longer needed by user on clicking in delete button. 
@@ -168,7 +173,7 @@ The app was built with help of the following technologies:
 * Mario Acosta
 * Pablo Garcia
 
-# Backend - code
+# Backend-code
 This section describes the main FE features and how they work...
 
 # Node.js
