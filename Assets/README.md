@@ -11,30 +11,30 @@ As a user I want to be able to store the applications I usually use in a daily b
 ```
 This app should cover all the following criteria:
 ```md
-When I get into my app.
-Then I am presented with a nav bar.
-When I look into the nav bar.
-Then I am presented with a search input, categories options and icons.
-When I click in the top-right icon.
-Then a log-in button is displayed.
-When I click on log-in button.
-Then I am presented in a new page, where I can create a new account or submit an account already created.
-When I log-in an account.
-Then I get in and a Log-out button appears by clicking at the top-right icon of the page.
-When I click in a new title.
-Then a modal card appears waiting for user to submit info required, such as website link, page name, image and category.
-When I click save in the modal card.
-Then a new card it´s added to the page.
-When I click in a card
-Then the website stored in that specific card it´s open in a new tab within the browser.
-When I click in categorie button in nav bar
-Then all categories are shown down.
-When I click in Log Out button which it´s inside of the top-right icon
-Then I get Log out from my account.
+WHEN I get into my app.
+THEN I am presented with a nav bar.
+WHEN I look into the nav bar.
+THEN I am presented with a search input, categories options and icons.
+WHEN I click in the top-right icon.
+THEN a log-in button is displayed.
+WHEN I click on log-in button.
+THEN I am presented in a new page, where I can create a new account or submit an account already created.
+WHEN I log-in an account.
+THEN I get in and a Log-out button appears by clicking at the top-right icon of the page.
+WHEN I click in a new title.
+THEN a modal card appears waiting for user to submit info required, such as website link, page name, image and category.
+WHEN I click save in the modal card.
+THEN a new card it´s added to the page.
+WHEN I click in a card
+THEN the website stored in that specific card it´s open in a new tab within the browser.
+WHEN I click in categorie button in nav bar
+THEN all categories are shown down.
+WHEN I click in Log Out button which it´s inside of the top-right icon
+THEN I get Log out from my account.
 
 ```
 # Pin-it Deployed.
-### * This is how Pin-it looks like from the landing page.
+### This is how Pin-it looks like from the landing page.
 
 ![Pin-it](imgs/landing%20page.png)
 
