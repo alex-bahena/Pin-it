@@ -48,12 +48,12 @@ THEN I get Log out from my account.
 # Pin-it-Deployed
 ### This is how Pin-it looks like from the landing page.
 
-![Pin-it](imgs/landing%20page.png)
+![Pin-it](./Assets/imgs/landing%20page.png)
 
 ### Here is how the log-in page looks like.
 
-![log-in](imgs/log-in.png)
-![log-in2](./imgs/log%20in%20page%20complete.png)
+![log-in](./Assets/imgs/log-in.png)
+![log-in2](./Assets/imgs/log%20in%20page%20complete.png)
 
 # Manual-User
 ### These are the instructions to follow as a user:
@@ -61,41 +61,41 @@ THEN I get Log out from my account.
 ### 1. Visit the following URL: https://pin-it-app-project.herokuapp.com/
 ### 2. Create a new account for Pin-it by clicking at the top icon and then another click in log-in button.
 
-![log-in-button](./imgs/log-in-button.png)
+![log-in-button](./Assets/imgs/log-in-button.png)
 
 ### 3. If you have an account created already, please submit your email and password and then click in Log-In button.
    
-![log-in-account](./imgs/Log-in-card.png)
+![log-in-account](./Assets/imgs/Log-in-card.png)
 
 ### 4. IF you don´t have an account, please create one account filling empty fields below with a username, Email address and Password to finally click in Sign-Up button to log in.
   
-![Create-new-account](./imgs/create-your-account.png)
+![Create-new-account](./Assets/imgs/create-your-account.png)
  
 ### 5. Start adding your favorite online websites by clicking in new tile as below.
    
-![add-new-card](./imgs/new%20title.png)
+![add-new-card](./Assets/imgs/new%20title.png)
    
 ### 6. Once step 5 it´s completed, add a new website filling empty fields below (Webisite Link, Page Name, Image and Category) and the click in 'Save' button to add it and 'Cancel' to get back.
 
-![new-card-modal](./imgs/adding-new-card.png)
+![new-card-modal](./Assets/imgs/adding-new-card.png)
 
 ### 7. Click inside in one of the cards deployed and it will refer you to the website stored within the card. For Example:
 
 #### 7.1 Click in Instagram card and then...
 
-![click-in-card](./imgs/instagram.png)
+![click-in-card](./Assets/imgs/instagram.png)
 
 #### 7.2 Instagram website will be open in a new tab within your browser as you can see below.
 
-![insta-deployed](./imgs/instagram%20deployed.png)
+![insta-deployed](./Assets/imgs/instagram%20deployed.png)
 
 ### 8. Filter the websites added by categories, clicking on the category button showed in the nav bar and then click in a specific category you want to see within your screen.
 
-![Categories](./imgs/categories.png)
+![Categories](./Assets/imgs/categories.png)
    
 ### 9.  Finally, click in log out button inside the top-right icon to log out from Pin-it.
    
-![log-out](./imgs/log-out-button.png)
+![log-out](./Assets/imgs/log-out-button.png)
 
 # Frontend-code
 
@@ -117,15 +117,15 @@ The app was built with help of the following technologies:
 * Implement the Google API to log in with a google account such a gmail.
 * Make it possible to remove cards no longer needed by user on clicking in delete button. 
   
-  ![delete-button](./imgs/delete-button.png)
+  ![delete-button](./Assets/imgs/delete-button.png)
 
 * Make search section in the nav bar look into an specific card .
   
-  ![search-input](imgs/search-input.png)
+  ![search-input](./Assets/imgs/search-input.png)
 
 * Make it possible to add notes, as well as shopping lists, to-dos and appointments.
   
-  ![notes](./imgs/notas.png)
+  ![notes](./Assets/imgs/notas.png)
 
 
 # License
