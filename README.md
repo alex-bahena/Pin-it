@@ -21,7 +21,7 @@ The purpose of this app is to improve the management and order of our applicatio
 As a user I want to be able to store the applications I usually use in a daily basis, 
 so I can organize and get into my apps faster.
 ```
-This app should cover all the following criteria:
+App criteria:
 ```md
 WHEN I get into my app.
 THEN I am presented with a nav bar.
